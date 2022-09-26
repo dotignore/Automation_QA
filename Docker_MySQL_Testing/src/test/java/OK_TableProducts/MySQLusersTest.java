@@ -38,7 +38,7 @@ public class MySQLusersTest {
         }
     }
 
-    @Test(description = "TC_001: Description test Description test", priority=1)
+    @Test(description = "TC_001: SELECT * FROM, table = \"users\" last record", priority=1)
     // Execute SQL Query - e.g. Select * to get all data from MySql table
     public static void ReadTableUsersTest() {
         try {
@@ -83,7 +83,7 @@ public class MySQLusersTest {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-//    @Test(description = "TC_002: Description test Description test", priority=2)
+//    @Test(description = "TC_002: Check NULL from SELECT * FROM, table = "users" last record", priority=2)
 //    // Execute SQL Query - e.g. Select * to get all data from MySql table
 //    public static void ReadTableUsersNullTest() {
 //        try {
