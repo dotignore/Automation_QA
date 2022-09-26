@@ -1,0 +1,86 @@
+##############################################################
+#
+# SH RUNER
+# docker build -t openjdk:8-jre-slim .
+#
+# docker images
+#
+# docker run --detach --name=mysql --publish 3307:3306 mysql_5:5.10
+#
+##############################################################
+
+############################
+# 1) download 8-jre-slim
+############################
+
+### download IMAGE ###
+# docker pull stalk23/8-jre-slim-iflex
+# OK
+
+############################
+# 2) run Docker
+############################
+
+### run Docker ###
+# docker build - < Dockerfile
+
+FROM openjdk:8-jre-slim
+#FROM selenium/standalone-chrome:3.141.59-zirconium
+
+# - - - - - - - - - - - - - - - - - 
+FROM suranagivinod/openjdk8
+#FROM openjdk:latest
+#FROM openjdk:oraclelinux8
+#FROM maven:3.6.0-jdk-8-alpine
+#FROM maven:3.5-jdk-8
+#FROM maven:latest
+#FROM maven:3.8.6-openjdk-18
+
+# RUN mkdir /home/selenium/headless
+# WORKDIR /home/selenium/headless
+WORKDIR /usr/autotest
+
+# - - - - - - - - - - - - - - - - - 
+#RUN apt-get update
+#RUN apt-get upgrade -y
+#RUN apt-get install mc -y
+#RUN apt-get install maven -y
+# - - - - - - - - - - - - - - - - - 
+
+
+############################
+# 3) copy file to Docker
+############################
+
+COPY pom.xml /usr/autotest
+COPY testNG.xml /usr/autotest
+COPY ./ /usr/autotest
+#COPY ./src /usr/autotest
+#COPY ./Resources /usr/autotest
+
+# ADD src/ ./src/
+# COPY /Users/ignore/Documents/Selenium/67_untitled/src /home/selenium/headless/
+
+
+# COPY src /app/demotest/src
+
+############################	
+# 4) run mvn
+############################
+
+# Install Maven
+#RUN mvn clean install
+#CMD ["mvn", "--version"]
+
+# RUN mvn install
+# ENTRYPOINT mvn clean test
+
+############################
+# 5) upload report file from Docker
+############################
+
+############################
+# 6) stop D
+############################
+
+

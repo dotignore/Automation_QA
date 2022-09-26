@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Day3 Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="tests" name="onfirefox(failed)" verbose="0">
+    <parameter name="browser" value="fireFox"/>
+    <classes>
+      <class name="test.Day1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="validateOnPrice1"/>
+          <include name="screenshotOnFail"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+    </classes>
+  </test> <!-- onfirefox(failed) -->
+  <test thread-count="5" parallel="tests" name="onchrome(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.Day1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="validateOnPrice1" invocation-numbers="0"/>
+          <include name="screenshotOnFail"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+    </classes>
+  </test> <!-- onchrome(failed) -->
+</suite> <!-- Failed suite [Day3 Suite] -->

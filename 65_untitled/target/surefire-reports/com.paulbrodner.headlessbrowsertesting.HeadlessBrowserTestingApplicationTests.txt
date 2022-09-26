@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.paulbrodner.headlessbrowsertesting.HeadlessBrowserTestingApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 6.776 sec <<< FAILURE! - in com.paulbrodner.headlessbrowsertesting.HeadlessBrowserTestingApplicationTests
+contextLoads(com.paulbrodner.headlessbrowsertesting.HeadlessBrowserTestingApplicationTests)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: com.paulbrodner.headlessbrowsertesting.HeadlessBrowserTestingApplication
+Caused by: java.lang.ExceptionInInitializerError
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @685fa119
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @685fa119
+
+ableToOpenGooglePage(com.paulbrodner.headlessbrowsertesting.HeadlessBrowserTestingApplicationTests)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: com.paulbrodner.headlessbrowsertesting.HeadlessBrowserTestingApplication
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
+Caused by: java.lang.ExceptionInInitializerError: Exception org.springframework.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @685fa119 [in thread "main"]
+

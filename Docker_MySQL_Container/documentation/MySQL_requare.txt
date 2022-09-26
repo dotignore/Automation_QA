@@ -1,0 +1,1522 @@
+121	SELECT * FROM catalogs WHERE id_catalog < 2;
++------------+----------------------+
+| id_catalog | name                 |
++------------+----------------------+
+|          1 | Процессоры           |
++------------+----------------------+
+
+121	SELECT * FROM catalogs WHERE id_catalog > 2 AND id_catalog < 7;
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          3 | Видеоадаптеры                       |
+|          4 | Жёсткие диски                       |
+|          5 | Оперативная память                  |
++------------+-------------------------------------+
+
+122	SELECT * FROM catalogs WHERE id_catalog BETWEEN 2 AND 3;
++------------+-----------------------------------+
+| id_catalog | name                              |
++------------+-----------------------------------+
+|          2 | Материнские платы                 |
+|          3 | Видеоадаптеры                     |
++------------+-----------------------------------+
+
+122	SELECT * FROM catalogs WHERE id_catalog NOT BETWEEN 2 AND 3;
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          1 | Процессоры                          |
+|          4 | Жёсткие диски                       |
+|          5 | Оперативная память                  |
++------------+-------------------------------------+
+
+123	SELECT * FROM catalogs WHERE id_catalog IN (1, 2, 5);
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          1 | Процессоры                          |
+|          2 | Материнские платы                   |
+|          5 | Оперативная память                  |
++------------+-------------------------------------+
+
+123	SELECT * FROM catalogs WHERE name = 'Процессоры';
++------------+----------------------+
+| id_catalog | name                 |
++------------+----------------------+
+|          1 | Процессоры           |
++------------+----------------------+
+
+124	SELECT * FROM orders WHERE ordertime >= '2005-02-01' AND ordertime < '2005-03-01';
++----------+---------+---------------------+--------+------------+
+| id_order | id_user | ordertime           | number | id_product |
++----------+---------+---------------------+--------+------------+
+|        2 |       6 | 2005-02-10 09:40:29 |      2 |         10 |
+|        3 |       1 | 2005-02-18 13:41:05 |      4 |         20 |
++----------+---------+---------------------+--------+------------+
+
+124	SELECT * FROM catalogs WHERE 1;
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          1 | Процессоры                          |
+|          2 | Материнские платы                   |
+|          3 | Видеоадаптеры                       |
+|          4 | Жёсткие диски                       |
+|          5 | Оперативная память                  |
++------------+-------------------------------------+
+
+125	SELECT * FROM catalogs ORDER BY id_catalog;
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          1 | Процессоры                          |
+|          2 | Материнские платы                   |
+|          3 | Видеоадаптеры                       |
+|          4 | Жёсткие диски                       |
+|          5 | Оперативная память                  |
++------------+-------------------------------------+
+
+125	SELECT * FROM catalogs ORDER BY name;
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          3 | Видеоадаптеры                       |
+|          4 | Жёсткие диски                       |
+|          2 | Материнские платы                   |
+|          5 | Оперативная память                  |
+|          1 | Процессоры                          |
++------------+-------------------------------------+
+
+125	SELECT count, mark FROM products WHERE count BETWEEN 4 AND 8 ORDER BY count;
++-------+------+
+| count | mark |
++-------+------+
+|     4 |  3.9 |
+|     4 |  4.0 |
+|     4 |  3.9 |
+|     4 |  4.1 |
+|     5 |  4.0 |
+|     5 |  4.0 |
+|     5 |  4.5 |
+|     6 |  3.7 |
+|     6 |  4.1 |
+|     6 |  4.1 |
+|     6 |  4.5 |
+|     6 |  3.6 |
+|     6 |  4.0 |
+|     6 |  4.0 |
+|     8 |  4.2 |
+|     8 |  4.5 |
++-------+------+
+
+126	SELECT count, mark FROM products WHERE count BETWEEN 4 AND 8 ORDER BY count, mark;
++-------+------+
+| count | mark |
++-------+------+
+|     4 |  3.9 |
+|     4 |  3.9 |
+|     4 |  4.0 |
+|     4 |  4.1 |
+|     5 |  4.0 |
+|     5 |  4.0 |
+|     5 |  4.5 |
+|     6 |  3.6 |
+|     6 |  3.7 |
+|     6 |  4.0 |
+|     6 |  4.0 |
+|     6 |  4.1 |
+|     6 |  4.1 |
+|     6 |  4.5 |
+|     8 |  4.2 |
+|     8 |  4.5 |
++-------+------+
+
+127	SELECT ordertime FROM orders ORDER BY ordertime;
++---------------------+
+| ordertime           |
++---------------------+
+| 2005-01-04 10:39:38 |
+| 2005-02-10 09:40:29 |
+| 2005-02-18 13:41:05 |
+| 2005-03-10 18:20:00 |
+| 2005-03-17 19:15:36 |
++---------------------+
+
+127	SELECT ordertime FROM orders ORDER BY ordertime DESC;
++---------------------+
+| ordertime           |
++---------------------+
+| 2005-03-17 19:15:36 |
+| 2005-03-10 18:20:00 |
+| 2005-02-18 13:41:05 |
+| 2005-02-10 09:40:29 |
+| 2005-01-04 10:39:38 |
++---------------------+
+
+128	SELECT id_product, count FROM products ORDER BY count DESC LIMIT 5;
++------------+-------+
+| id_product | count |
++------------+-------+
+|         25 |    20 |
+|         28 |    20 |
+|         26 |    15 |
+|          9 |    12 |
+|         29 |    12 |
++------------+-------+
+
+128	SELECT id_product, count FROM products ORDER BY count DESC LIMIT 5, 5;
++------------+-------+
+| id_product | count |
++------------+-------+
+|          1 |    10 |
+|         27 |    10 |
+|         24 |     8 |
+|         30 |     8 |
+|         19 |     6 |
++------------+-------+
+
+130	SELECT COUNT(id_order) FROM orders;
++-----------------+
+| COUNT(id_order) |
++-----------------+
+|               5 |
++-----------------+
+
+131	SELECT COUNT(id_product) FROM products;
++-------------------+
+| COUNT(id_product) |
++-------------------+
+|                30 |
++-------------------+
+
+131	SELECT COUNT(id_order) AS total FROM orders;
++-------+
+| total |
++-------+
+|     5 |
++-------+
+
+131	SELECT MIN(id_catalog) AS min, MAX(id_catalog) AS max FROM catalogs;
++------+------+
+| min  | max  |
++------+------+
+|    1 |    5 |
++------+------+
+
+132	SELECT * FROM catalogs ORDER BY id_catalog LIMIT 1;
++------------+----------------------+
+| id_catalog | name                 |
++------------+----------------------+
+|          1 | Процессоры           |
++------------+----------------------+
+
+132	SELECT * FROM catalogs ORDER BY id_catalog DESC LIMIT 1;
++------------+-------------------------------------+
+| id_catalog | name                                |
++------------+-------------------------------------+
+|          5 | Оперативная память                  |
++------------+-------------------------------------+
+
+133	SELECT id_catalog FROM products ORDER BY id_catalog;
++------------+
+| id_catalog |
++------------+
+|          1 |
+........
+|          5 |
++------------+
+
+134	SELECT id_catalog FROM products GROUP BY id_catalog ORDER BY id_catalog;
+
++------------+
+| id_catalog |
++------------+
+|          1 |
+|          2 |
+|          3 |
+|          4 |
+|          5 |
++------------+
+
+134	SELECT COUNT(id_catalog) FROM products;
++-------------------+
+| COUNT(id_catalog) |
++-------------------+
+|                30 |
++-------------------+
+
+134	SELECT COUNT(DISTINCT id_catalog) FROM products;
++----------------------------+
+| COUNT(DISTINCT id_catalog) |
++----------------------------+
+|                          5 |
++----------------------------+
+
+135	SELECT id_catalog, COUNT(id_catalog) FROM products GROUP BY id_catalog ORDER BY id_catalog;
++------------+-------------------+
+| id_catalog | COUNT(id_catalog) |
++------------+-------------------+
+|          1 |                 9 |
+|          2 |                 6 |
+|          3 |                 4 |
+|          4 |                 5 |
+|          5 |                 6 |
++------------+-------------------+
+
+136	SELECT id_catalog, COUNT(id_catalog) FROM products WHERE id_catalog > 2 GROUP BY id_catalog ORDER BY id_catalog;
++------------+-------------------+
+| id_catalog | COUNT(id_catalog) |
++------------+-------------------+
+|          3 |                 4 |
+|          4 |                 5 |
+|          5 |                 6 |
++------------+-------------------+
+
+137	SELECT id_catalog, COUNT(id_catalog) AS total 
+FROM products 
+GROUP BY id_catalog HAVING total >5 
+ORDER BY id_catalog;
++------------+-------+
+| id_catalog | total |
++------------+-------+
+|          1 |     9 |
+|          2 |     6 |
+|          5 |     6 |
++------------+-------+
+
+137	SELECT id_catalog, COUNT(id_catalog) 
+FROM products 
+GROUP BY id_catalog HAVING id_catalog > 2 ORDER BY id_catalog;
++------------+-------------------+
+| id_catalog | COUNT(id_catalog) |
++------------+-------------------+
+|          3 |                 4 |
+|          4 |                 5 |
+|          5 |                 6 |
++------------+-------------------+
+
+138	SELECT id_catalog 
+FROM products 
+HAVING id_catalog > 2 
+ORDER BY id_catalog;
++------------+
+| id_catalog |
++------------+
+|          3 |
+......
+|          5 |
++------------+
+
+139	SELECT id_order +5 
+	FROM orders;
++-------------+
+| id_order +5 |
++-------------+
+|           6 |
+|           7 |
+|           8 |
+|           9 |
+|          10 |
++-------------+
+
+139	SELECT id_catalog FROM catalogs 
+	UNION 
+	SELECT id_order +5 FROM orders;
++------------+
+| id_catalog |
++------------+
+|          1 |
+|          2 |
+|          3 |
+|          4 |
+|          5 |
+|          6 |
+|          7 |
+|          8 |
+|          9 |
+|         10 |
++------------+
+
+140	SELECT id_catalog FROM catalogs 
+	UNION ALL 
+	SELECT id_order FROM orders;
++------------+
+| id_catalog |
++------------+
+|          1 |
+|          2 |
+|          3 |
+|          4 |
+|          5 |
+|          6 |
+|          1 |
+|          2 |
+|          3 |
+|          4 |
+|          5 |
++------------+
+
+141	SELECT id_catalog FROM catalogs 
+	UNION ALL 
+	SELECT id_order FROM orders 
+	ORDER BY id_catalog;
++------------+
+| id_catalog |
++------------+
+|          1 |
+|          1 |
+|          2 |
+|          2 |
+|          3 |
+|          3 |
+|          4 |
+|          4 |
+|          5 |
+|          5 |
+|          6 |
++------------+
+
+142	SELECT id_catalog FROM catalogs 
+	UNION 
+	SELECT id_order FROM orders 
+	UNION 
+	SELECT id_catalog FROM products 
+	UNION 
+	SELECT id_user FROM users;
++------------+
+| id_catalog |
++------------+
+|          1 |
+|          2 |
+|          3 |
+|          4 |
+|          5 |
+|          6 |
++------------+
+
+143	SELECT id_catalog FROM catalogs WHERE id_catalog !=4 
+UNION 
+	SELECT id_order FROM orders WHERE id_order !=4 
+UNION 
+	SELECT id_product FROM products WHERE id_product !=4 LIMIT 10 
+UNION 
+	SELECT id_user FROM users WHERE id_user !=4;
++------------+
+| id_catalog |
++------------+
+|          1 |
+|          2 |
+|          3 |
+|          5 |
+|          6 |
+|          7 |
+|          8 |
+|          9 |
+|         10 |
+|         11 |
++------------+
+
+
+154	SELECT products.name, products.price 
+	FROM products, products AS prd 
+	WHERE 
+	products.id_catalog = prd.id_catalog 
+	AND 
+	prd.name = 'Maxtor 6Y120P0';
++------------------------------+---------+
+| name                         | price   |
++------------------------------+---------+
+| Maxtor 6Y120P0               | 2456.00 |
+| Maxtor 6B200P0               | 3589.00 |
+| Samsung SP0812C              | 2093.00 |
+| Seagate Barracuda ST3160023A | 3139.00 |
+| Seagate ST3120026A           | 2468.00 |
++------------------------------+---------+
+
+155	SELECT id_order, ordertime 
+FROM orders 
+ORDER BY ordertime;
++----------+---------------------+
+| id_order | ordertime           |
++----------+---------------------+
+|        1 | 2005-01-04 10:39:38 |
+|        2 | 2005-02-10 09:40:29 |
+|        3 | 2005-02-18 13:41:05 |
+|        4 | 2005-03-10 18:20:00 |
+|        5 | 2005-03-17 19:15:36 |
++----------+---------------------+
+
+155	SELECT ord1.id_order AS id1, 
+		  ord2.id_order AS id2, 
+		  ord1.ordertime, 
+		  ord2.ordertime, 
+		  TO_DAYS(ord2.ordertime) - TO_DAYS(ord1.ordertime) AS different 
+FROM orders AS ord2, orders AS ord1 
+WHERE ord1.id_order + 1 = ord2.id_order 
+ORDER BY ord1.ordertime;
++-----+-----+---------------------+---------------------+-----------+
+| id1 | id2 | ordertime           | ordertime           | different |
++-----+-----+---------------------+---------------------+-----------+
+|   1 |   2 | 2005-01-04 10:39:38 | 2005-02-10 09:40:29 |        37 |
+|   2 |   3 | 2005-02-10 09:40:29 | 2005-02-18 13:41:05 |         8 |
+|   3 |   4 | 2005-02-18 13:41:05 | 2005-03-10 18:20:00 |        20 |
+|   4 |   5 | 2005-03-10 18:20:00 | 2005-03-17 19:15:36 |         7 |
++-----+-----+---------------------+---------------------+-----------+
+
+156	SELECT id_catalog, COUNT(id_product), SUM(count) FROM products GROUP BY id_catalog;
++------------+-------------------+------------+
+| id_catalog | COUNT(id_product) | SUM(count) |
++------------+-------------------+------------+
+|          1 |                 9 |         47 |
+|          2 |                 6 |         27 |
+|          3 |                 4 |         15 |
+|          4 |                 5 |         26 |
+|          5 |                 6 |         85 |
++------------+-------------------+------------+
+
+156	SELECT  catalogs.name, 
+	COUNT(id_product), 
+	SUM(count) 
+FROM 
+	products, catalogs 
+WHERE 
+	products.id_catalog = catalogs.id_catalog 
+GROUP BY 
+	products.id_catalog;
++-------------------------------------+-------------------+------------+
+| name                                | COUNT(id_product) | SUM(count) |
++-------------------------------------+-------------------+------------+
+| Процессоры                          |                 9 |         47 |
+| Материнские платы                   |                 6 |         27 |
+| Видеоадаптеры                       |                 4 |         15 |
+| Жёсткие диски                       |                 5 |         26 |
+| Оперативная память                  |                 6 |         85 |
++-------------------------------------+-------------------+------------+
+
+158	SELECT 
+	id_order, users.surname, ordertime, products.name 
+FROM 
+	users, orders, products 
+WHERE
+	orders.id_user = users.id_user 
+	AND
+	orders.id_product = products.id_product;
++----------+------------------+---------------------+------------------------+
+| id_order | surname          | ordertime           | name                   |
++----------+------------------+---------------------+------------------------+
+|        1 | Симдянов         | 2005-01-04 10:39:38 | Intel Pentium 4 3.0GHz |
+|        2 | Корнеев          | 2005-02-10 09:40:29 | Gigabyte GA-8I848P-RS  |
+|        3 | Иванов           | 2005-02-18 13:41:05 | Maxtor 6Y120P0         |
+|        4 | Симдянов         | 2005-03-10 18:20:00 | Maxtor 6Y120P0         |
+|        5 | Симдянов         | 2005-03-17 19:15:36 | Maxtor 6Y120P0         |
++----------+------------------+---------------------+------------------------+
+
+158	SELECT id_order, users.surname, products.name, catalogs.name 
+FROM users, orders, products, catalogs 
+WHERE 	
+	orders.id_user = users.id_user 
+AND 
+	orders.id_product = products.id_product 
+AND 
+	products.id_catalog = catalogs.id_catalog;
++----------+------------------+------------------------+-----------------------------------+
+| id_order | surname          | name                   | name                              |
++----------+------------------+------------------------+-----------------------------------+
+|        1 | Симдянов         | Intel Pentium 4 3.0GHz | Процессоры                        |
+|        2 | Корнеев          | Gigabyte GA-8I848P-RS  | Материнские платы                 |
+|        3 | Иванов           | Maxtor 6Y120P0         | Жёсткие диски                     |
+|        4 | Симдянов         | Maxtor 6Y120P0         | Жёсткие диски                     |
+|        5 | Симдянов         | Maxtor 6Y120P0         | Жёсткие диски                     |
++----------+------------------+------------------------+-----------------------------------+
+
+	### JOIN ###### JOIN ###### JOIN ###### JOIN ###### JOIN ###
+162	SELECT 
+			catalogs.name, COUNT(id_product) 
+	FROM 
+			catalogs JOIN products USING(id_catalog) 
+	GROUP BY 
+			products.id_catalog;
++-------------------------------------+-------------------+
+| name                                | COUNT(id_product) |
++-------------------------------------+-------------------+
+| Процессоры                          |                 9 |
+| Материнские платы                   |                 6 |
+| Видеоадаптеры                       |                 4 |
+| Жёсткие диски                       |                 5 |
+| Оперативная память                  |                 6 |
++-------------------------------------+-------------------+
+
+163	SELECT catalogs.name, COUNT(id_product) 
+	FROM catalogs LEFT JOIN products USING(id_catalog) 
+	GROUP BY products.id_catalog;
++-------------------------------------+-------------------+
+| name                                | COUNT(id_product) |
++-------------------------------------+-------------------+
+| Переферия                           |                 0 |
+| Процессоры                          |                 9 |
+| Материнские платы                   |                 6 |
+| Видеоадаптеры                       |                 4 |
+| Жёсткие диски                       |                 5 |
+| Оперативная память                  |                 6 |
++-------------------------------------+-------------------+
+
+164	СПИСОК покупателей и число оплаченных ими заказов
+SELECT users.name, users.surname, COUNT(orders.id_order) AS total
+FROM	users JOIN orders USING(id_user)
+GROUP BY users.id_user 
+ORDER BY total DESC;
++------------------+--------------------+-------+
+| surname          | name               | total |
++------------------+--------------------+-------+
+| Симдянов         | Игорь              |     3 |
+| Корнеев          | Александр          |     1 |
+| Иванов           | Александр          |     1 |
++------------------+--------------------+-------+
+
+164	Полный список покупателей
+SELECT users.surname, users.name, COUNT(orders.id_order) AS total 
+FROM users LEFT JOIN orders USING(id_user) 
+GROUP BY users.id_user 
+ORDER BY total DESC;
++--------------------+--------------------+-------+
+| surname            | name               | total |
++--------------------+--------------------+-------+
+| Симдянов           | Игорь              |     3 |
+| Корнеев            | Александр          |     1 |
+| Иванов             | Александр          |     1 |
+| Лосев              | Сергей             |     0 |
+| Кузнецов           | Максим             |     0 |
+| Нехорошев          | Анатолий           |     0 |
++--------------------+--------------------+-------+
+
+165	
+SELECT users.surname, users.name, COUNT(orders.id_order) AS total 
+FROM users LEFT JOIN orders USING(id_user) 
+WHERE name = 'Александр' 
+GROUP BY users.id_user 
+ORDER BY total DESC;
++----------------+--------------------+-------+
+| surname        | name               | total |
++----------------+--------------------+-------+
+| Корнеев        | Александр          |     1 |
+| Иванов         | Александр          |     1 |
++----------------+--------------------+-------+
+
+165	SELECT users.surname, users.name, COUNT(orders.id_order) AS total 
+FROM users LEFT JOIN orders USING(id_user) 
+GROUP BY users.id_user HAVING total < 3 
+ORDER BY total DESC;
++--------------------+--------------------+-------+
+| surname            | name               | total |
++--------------------+--------------------+-------+
+| Корнеев            | Александр          |     1 |
+| Иванов             | Александр          |     1 |
+| Лосев              | Сергей             |     0 |
+| Кузнецов           | Максим             |     0 |
+| Нехорошев          | Анатолий           |     0 |
++--------------------+--------------------+-------+
+
+SELECT users.id_user, users.name, users.surname, orders.id_order, orders.id_user,
+	IF(COUNT(orders.id_order)>0, 'yes','no') AS yes_no
+FROM users LEFT JOIN orders ON users.id_user = orders.id_user
+GROUP BY users.id_user;
++---------+--------------------+--------------------+----------+---------+--------+
+| id_user | name               | surname            | id_order | id_user | yes_no |
++---------+--------------------+--------------------+----------+---------+--------+
+|       1 | Александр          | Иванов             |        3 |       1 | yes    |
+|       2 | Сергей             | Лосев              |     NULL |    NULL | no     |
+|       3 | Игорь              | Симдянов           |        1 |       3 | yes    |
+|       4 | Максим             | Кузнецов           |     NULL |    NULL | no     |
+|       5 | Анатолий           | Нехорошев          |     NULL |    NULL | no     |
+|       6 | Александр          | Корнеев            |        2 |       6 | yes    |
++---------+--------------------+--------------------+----------+---------+--------+
+
+	### Операторы и математические функции ###
+248	SELECT name, count FROM products WHERE count <5;
++------------------------------+-------+
+| name                         | count |
++------------------------------+-------+
+| Celeron 2.0GHz               |     2 |
+| Celeron 2.4GHz               |     4 |
+| Celeron D 320 2.4GHz         |     1 |
+| Intel Pentium 4 3.0GHz       |     1 |
+| Gigabyte GA-8I848P-RS        |     4 |
+| Gigabyte GA-8IG1000          |     2 |
+| Asustek P4C800-E Delux       |     4 |
+| ASUSTEK A9600XT/TD           |     0 |
+| SAPPHIRE 256MB RADEON 9550   |     3 |
+| Maxtor 6B200P0               |     4 |
+| Seagate Barracuda ST3160023A |     3 |
++------------------------------+-------+
+
+249	SELECT name, price FROM products WHERE price >2000;
++------------------------------+---------+
+| name                         | price   |
++------------------------------+---------+
+| Celeron 2.4GHz               | 2109.00 |
+| Celeron D 325 2.53GHz        | 2747.00 |
+| Intel Pentium 4 2.8GHz       | 7259.00 |
+| Intel Pentium 4 3.0GHz       | 6147.00 |
+| Intel Pentium 4 3.0GHz       | 5673.00 |
+| Gigabyte GA-8IG1000          | 2420.00 |
+| Gigabyte GA-8IPE1000G        | 2289.00 |
+| Asustek P4C800-E Delux       | 5395.00 |
+| Asustek P4P800-VM\L i865G    | 2518.00 |
+| Epox EP-4PDA3I               | 2289.00 |
+| ASUSTEK A9600XT/TD           | 5156.00 |
+| SAPPHIRE 256MB RADEON 9550   | 2730.00 |
+| GIGABYTE AGP GV-N59X128D     | 5886.00 |
+| Maxtor 6Y120P0               | 2456.00 |
+| Maxtor 6B200P0               | 3589.00 |
+| Samsung SP0812C              | 2093.00 |
+| Seagate Barracuda ST3160023A | 3139.00 |
+| Seagate ST3120026A           | 2468.00 |
++------------------------------+---------+
+
+250	SELECT surname, name, patronymic 
+FROM users
+WHERE phone IS NULL;
++--------------------+------------------+----------------------+
+| surname            | name             | patronymic           |
++--------------------+------------------+----------------------+
+| Кузнецов           | Максим           | Валерьевич           |
+| Нехорошев          | Анатолий         | Юрьевич              |
++--------------------+------------------+----------------------+
+
+251	SELECT surname, name, patronymic FROM users WHERE url IS NOT NULL;
++------------------+--------------+--------------------------+
+| surname          | name         | patronymic               |
++------------------+--------------+--------------------------+
+| Симдянов         | Игорь        | Вячеславович             |
+| Кузнецов         | Максим       | Валерьевич               |
++------------------+--------------+--------------------------+
+
+252	SELECT name, price FROM products WHERE price BETWEEN 1000 AND 2000;
++-------------------------------+---------+
+| name                          | price   |
++-------------------------------+---------+
+| Celeron 1.8                   | 1595.00 |
+| Celeron 2.0GHz                | 1969.00 |
+| Celeron D 320 2.4GHz          | 1962.00 |
+| Celeron D 315 2.26GHz         | 1880.00 |
+| Gigabyte GA-8I848P-RS         | 1896.00 |
+| ASUSTEK V9520X                | 1602.00 |
+| DDR-400 256MB Kingston        | 1085.00 |
+| DDR-400 256MB Hynix Original  | 1179.00 |
+| DDR-400 512MB Kingston        | 1932.00 |
+| DDR-400 512MB PQI             | 1690.00 |
+| DDR-400 512MB Hynix           | 1717.00 |
++-------------------------------+---------+
+
+252	SELECT name, price FROM products WHERE price NOT BETWEEN 1000 AND 2000;
++------------------------------+---------+
+| name                         | price   |
++------------------------------+---------+
+| Celeron 2.4GHz               | 2109.00 |
+| Celeron D 325 2.53GHz        | 2747.00 |
+| Intel Pentium 4 2.8GHz       | 7259.00 |
+| Intel Pentium 4 3.0GHz       | 6147.00 |
+| Intel Pentium 4 3.0GHz       | 5673.00 |
+| Gigabyte GA-8IG1000          | 2420.00 |
+| Gigabyte GA-8IPE1000G        | 2289.00 |
+| Asustek P4C800-E Delux       | 5395.00 |
+| Asustek P4P800-VM\L i865G    | 2518.00 |
+| Epox EP-4PDA3I               | 2289.00 |
+| ASUSTEK A9600XT/TD           | 5156.00 |
+| SAPPHIRE 256MB RADEON 9550   | 2730.00 |
+| GIGABYTE AGP GV-N59X128D     | 5886.00 |
+| Maxtor 6Y120P0               | 2456.00 |
+| Maxtor 6B200P0               | 3589.00 |
+| Samsung SP0812C              | 2093.00 |
+| Seagate Barracuda ST3160023A | 3139.00 |
+| Seagate ST3120026A           | 2468.00 |
+| DDR-400 256MB PQI            |  899.00 |
++------------------------------+---------+
+
+339	SELECT id_user, surname FROM users ORDER BY id_user;
++---------+--------------------+
+| id_user | surname            |
++---------+--------------------+
+|       1 | Иванов             |
+|       2 | Лосев              |
+|       3 | Симдянов           |
+|       4 | Кузнецов           |
+|       5 | Нехорошев          |
+|       6 | Корнеев            |
++---------+--------------------+
+
+	Вывод первых букв фамилии покупателей
+339	SELECT MID(surname,1,1) AS first_char FROM users GROUP BY first_char ORDER BY first_char;
++------------+
+| first_char |
++------------+
+| И          |
+| К          |
+| Л          |
+| Н          |
+| С          |
++------------+
+
+342	SELECT id_product, REPLACE(name, 'Pentium 4', 'P IV') FROM products ORDER BY id_product LIMIT 10;
++------------+------------------------------------+
+| id_product | REPLACE(name, 'Pentium 4', 'P IV') |
++------------+------------------------------------+
+|          1 | Celeron 1.8                        |
+|          2 | Celeron 2.0GHz                     |
+|          3 | Celeron 2.4GHz                     |
+|          4 | Celeron D 320 2.4GHz               |
+|          5 | Celeron D 325 2.53GHz              |
+|          6 | Celeron D 315 2.26GHz              |
+|          7 | Intel P IV 2.8GHz                  |
+|          8 | Intel P IV 3.0GHz                  |
+|          9 | Intel P IV 3.0GHz                  |
+|         10 | Gigabyte GA-8I848P-RS              |
++------------+------------------------------------+
+
+343	SELECT id_product, REPLACE(REPLACE(name, 'Pentium 4', 'P IV'), 'Celeron', 'Cel') AS res FROM products ORDER BY id_product LIMIT 10;
++------------+-----------------------+
+| id_product | res                   |
++------------+-----------------------+
+|          1 | Cel 1.8               |
+|          2 | Cel 2.0GHz            |
+|          3 | Cel 2.4GHz            |
+|          4 | Cel D 320 2.4GHz      |
+|          5 | Cel D 325 2.53GHz     |
+|          6 | Cel D 315 2.26GHz     |
+|          7 | Intel P IV 2.8GHz     |
+|          8 | Intel P IV 3.0GHz     |
+|          9 | Intel P IV 3.0GHz     |
+|         10 | Gigabyte GA-8I848P-RS |
++------------+-----------------------+
+
+343	SELECT id_product, REPLACE(name, ' ', '') FROM products ORDER BY id_product LIMIT 10;
++------------+------------------------+
+| id_product | REPLACE(name, ' ', '') |
++------------+------------------------+
+|          1 | Celeron1.8             |
+|          2 | Celeron2.0GHz          |
+|          3 | Celeron2.4GHz          |
+|          4 | CeleronD3202.4GHz      |
+|          5 | CeleronD3252.53GHz     |
+|          6 | CeleronD3152.26GHz     |
+|          7 | IntelPentium42.8GHz    |
+|          8 | IntelPentium43.0GHz    |
+|          9 | IntelPentium43.0GHz    |
+|         10 | GigabyteGA-8I848P-RS   |
++------------+------------------------+
+
+
+364	SELECT name FROM products WHERE name LIKE 'Celeron%';
++-----------------------+
+| name                  |
++-----------------------+
+| Celeron 1.8           |
+| Celeron 2.0GHz        |
+| Celeron 2.4GHz        |
+| Celeron D 320 2.4GHz  |
+| Celeron D 325 2.53GHz |
+| Celeron D 315 2.26GHz |
++-----------------------+
+
+365	SELECT name, price FROM products WHERE price LIKE '1___.00' ORDER BY price;
++-------------------------------+---------+
+| name                          | price   |
++-------------------------------+---------+
+| DDR-400 256MB Kingston        | 1085.00 |
+| DDR-400 256MB Hynix Original  | 1179.00 |
+| Celeron 1.8                   | 1595.00 |
+| ASUSTEK V9520X                | 1602.00 |
+| DDR-400 512MB PQI             | 1690.00 |
+| DDR-400 512MB Hynix           | 1717.00 |
+| Celeron D 315 2.26GHz         | 1880.00 |
+| Gigabyte GA-8I848P-RS         | 1896.00 |
+| DDR-400 512MB Kingston        | 1932.00 |
+| Celeron D 320 2.4GHz          | 1962.00 |
+| Celeron 2.0GHz                | 1969.00 |
++-------------------------------+---------+
+
+366	SELECT name, price FROM products WHERE price NOT LIKE '1___.00' ORDER BY price;
++------------------------------+---------+
+| name                         | price   |
++------------------------------+---------+
+| DDR-400 256MB PQI            |  899.00 |
+| Samsung SP0812C              | 2093.00 |
+.................
+| Intel Pentium 4 3.0GHz       | 6147.00 |
+| Intel Pentium 4 2.8GHz       | 7259.00 |
++------------------------------+---------+
+
+369	SELECT name FROM products WHERE name RLIKE 'GHZ$';
++------------------------+
+| name                   |
++------------------------+
+| Celeron 2.0GHz         |
+| Celeron 2.4GHz         |
+| Celeron D 320 2.4GHz   |
+| Celeron D 325 2.53GHz  |
+| Celeron D 315 2.26GHz  |
+| Intel Pentium 4 2.8GHz |
+| Intel Pentium 4 3.0GHz |
+| Intel Pentium 4 3.0GHz |
++------------------------+
+
+371	SELECT name FROM products WHERE name RLIKE 'Pentium|Celeron';
++------------------------+
+| name                   |
++------------------------+
+| Celeron 1.8            |
+| Celeron 2.0GHz         |
+| Celeron 2.4GHz         |
+| Celeron D 320 2.4GHz   |
+| Celeron D 325 2.53GHz  |
+| Celeron D 315 2.26GHz  |
+| Intel Pentium 4 2.8GHz |
+| Intel Pentium 4 3.0GHz |
+| Intel Pentium 4 3.0GHz |
++------------------------+
+
+378	SELECT email 
+	FROM users 
+	WHERE email RLIKE '^[-0-9a-z_\\.]+@[-0-9a-z_\\.]+\\.[a-z]{2,6}$';
+	SELECT email FROM users WHERE email RLIKE '^[a-z]+@[a-z]+\\.[a-z]{2,6}';
++-----------------------+
+| email                 |
++-----------------------+
+| ivanov@email.ru       |
+| losev@email.ru        |
+| simdyanov@softtime.ru |
+| korneev@domen.ru      |
++-----------------------+
+
+379	SELECT name, price 
+FROM products 
+WHERE name RLIKE '^Celeron' AND price RLIKE '^19[[:digit:]]{2}\\.[[:digit:]]{2}';
++----------------------+---------+
+| name                 | price   |
++----------------------+---------+
+| Celeron 2.0GHz       | 1969.00 |
+| Celeron D 320 2.4GHz | 1962.00 |
++----------------------+---------+
+
+380	SELECT name, price 
+FROM products 
+WHERE 
+	name NOT RLIKE '^Asustek'
+	AND 
+	name NOT RLIKE '^Gigabyte';
++-------------------------------+---------+
+| name                          | price   |
++-------------------------------+---------+
+| Celeron 1.8                   | 1595.00 |
+| Celeron 2.0GHz                | 1969.00 |
+| Celeron 2.4GHz                | 2109.00 |
+| Celeron D 320 2.4GHz          | 1962.00 |
+| Celeron D 325 2.53GHz         | 2747.00 |
+| Celeron D 315 2.26GHz         | 1880.00 |
+| Intel Pentium 4 2.8GHz        | 7259.00 |
+| Intel Pentium 4 3.0GHz        | 6147.00 |
+| Intel Pentium 4 3.0GHz        | 5673.00 |
+| Epox EP-4PDA3I                | 2289.00 |
+| SAPPHIRE 256MB RADEON 9550    | 2730.00 |
+| Maxtor 6Y120P0                | 2456.00 |
+| Maxtor 6B200P0                | 3589.00 |
+| Samsung SP0812C               | 2093.00 |
+| Seagate Barracuda ST3160023A  | 3139.00 |
+| Seagate ST3120026A            | 2468.00 |
+| DDR-400 256MB Kingston        | 1085.00 |
+| DDR-400 256MB Hynix Original  | 1179.00 |
+| DDR-400 256MB PQI             |  899.00 |
+| DDR-400 512MB Kingston        | 1932.00 |
+| DDR-400 512MB PQI             | 1690.00 |
+| DDR-400 512MB Hynix           | 1717.00 |
++-------------------------------+---------+
+
+384	SELECT name FROM products WHERE MATCH (name, description) AGAINST ('256MB');
++-------------------------------+
+| name                          |
++-------------------------------+
+| DDR-400 256MB PQI             |
+| DDR-400 256MB Kingston        |
+| DDR-400 256MB Hynix Original  |
+| SAPPHIRE 256MB RADEON 9550    |
++-------------------------------+
+
+385	SELECT name FROM products WHERE MATCH (name, description) AGAINST ('Процессор Pentium');
++------------------------+
+| name                   |
++------------------------+
+| Intel Pentium 4 2.8GHz |
+| Intel Pentium 4 3.0GHz |
+| Intel Pentium 4 3.0GHz |
+| Celeron 1.8            |
+| Celeron 2.0GHz         |
+| Celeron 2.4GHz         |
+| Celeron D 320 2.4GHz   |
+| Celeron D 325 2.53GHz  |
+| Celeron D 315 2.26GHz  |
++------------------------+
+
+387	SELECT name FROM products WHERE MATCH (name, description) AGAINST ('Процессор') 
+						   AND MATCH (name, description) AGAINST ('Pentium'); 
++------------------------+
+| name                   |
++------------------------+
+| Intel Pentium 4 2.8GHz |
+| Intel Pentium 4 3.0GHz |
+| Intel Pentium 4 3.0GHz |
++------------------------+
+
+388	SELECT name 
+FROM products 
+WHERE MATCH (name, description) AGAINST ('Процессор +Pentium' IN BOOLEAN MODE);
++------------------------+
+| name                   |
++------------------------+
+| Intel Pentium 4 2.8GHz |
+| Intel Pentium 4 3.0GHz |
+| Intel Pentium 4 3.0GHz |
++------------------------+
+
+389	SELECT name 
+FROM products 
+WHERE MATCH (name, description) AGAINST ('Процессор -Pentium' IN BOOLEAN MODE);
++-----------------------+
+| name                  |
++-----------------------+
+| Celeron 1.8           |
+| Celeron 2.0GHz        |
+| Celeron 2.4GHz        |
+| Celeron D 320 2.4GHz  |
+| Celeron D 325 2.53GHz |
+| Celeron D 315 2.26GHz |
++-----------------------+
+
+390	SELECT description 
+FROM products 
+WHERE MATCH (name, description) AGAINST ('Celeron Pentium' IN BOOLEAN MODE);
++------------------------------------------------------------------------------------------+
+| description                                                                              |
++------------------------------------------------------------------------------------------+
+| Процессор Celeron 1.8GHz, 128kb, 478-PGA, 400Mhz, OEM 0.18                               |
+| Процессор Celeron 2.0GHz, 128KB, 478-PGA, 400MHz, OEM                                    |
+| Процессор Celeron 2.4GHz, 128kb, 478-PGA, 400Mhz, OEM                                    |
+| Процессор Celeron D 320 2.4GHz, 256kb, 478-PGA, 533Mhz, OEM                              |
+| Процессор Celeron D 325 2.53GHz, 256kb, 478-PGA, 533Mhz, OEM                             |
+| Процессор Celeron D 315 2.26GHz, 256kb, 478-PGA, 533Mhz, OEM                             |
+| Процессор Intel Pentium 4 3.2GHz, 1Mb, 478-PGA, 800Mhz, Hyper-Threading, OEM             |
+| Процессор Intel Pentium 4 3.0GHz, 512Kb, 478-PGA, 800Mhz, Hyper-Threading, OEM           |
+| Процессор Intel Pentium 4 3.0GHz, 1Mb, 478-PGA, 800Mhz, Hyper-Treading, OEM              |
++------------------------------------------------------------------------------------------+
+
+391	SELECT name 
+FROM products 
+WHERE MATCH (name, description) AGAINST ('Процессор (>Celeron <Pentium)' IN BOOLEAN MODE);
++------------------------+
+| name                   |
++------------------------+
+| Celeron 1.8            |
+| Celeron 2.0GHz         |
+| Celeron 2.4GHz         |
+| Celeron D 320 2.4GHz   |
+| Celeron D 325 2.53GHz  |
+| Celeron D 315 2.26GHz  |
+| Intel Pentium 4 2.8GHz |
+| Intel Pentium 4 3.0GHz |
+| Intel Pentium 4 3.0GHz |
++------------------------+
+
+
+394	SELECT description 
+FROM products 
+WHERE MATCH (name, description) AGAINST ('"Процессор Celeron"' IN BOOLEAN MODE);
++------------------------------------------------------------------------+
+| description                                                            |
++------------------------------------------------------------------------+
+| Процессор Celeron 1.8GHz, 128kb, 478-PGA, 400Mhz, OEM 0.18             |
+| Процессор Celeron 2.0GHz, 128KB, 478-PGA, 400MHz, OEM                  |
+| Процессор Celeron 2.4GHz, 128kb, 478-PGA, 400Mhz, OEM                  |
+| Процессор Celeron D 320 2.4GHz, 256kb, 478-PGA, 533Mhz, OEM            |
+| Процессор Celeron D 325 2.53GHz, 256kb, 478-PGA, 533Mhz, OEM           |
+| Процессор Celeron D 315 2.26GHz, 256kb, 478-PGA, 533Mhz, OEM           |
++------------------------------------------------------------------------+
+
+395	SELECT name 
+FROM products WHERE MATCH (name, description) AGAINST ('Celeron');
++-----------------------+
+| name                  |
++-----------------------+
+| Celeron 1.8           |
+| Celeron 2.0GHz        |
+| Celeron 2.4GHz        |
+| Celeron D 320 2.4GHz  |
+| Celeron D 325 2.53GHz |
+| Celeron D 315 2.26GHz |
++-----------------------+
+
+	Функции применяемые вместе с конструкцией GROUP BY
+403	SELECT COUNT(id_user), COUNT(email), COUNT(url) FROM users;
++----------------+--------------+------------+
+| COUNT(id_user) | COUNT(email) | COUNT(url) |
++----------------+--------------+------------+
+|              6 |            5 |          2 |
++----------------+--------------+------------+
+
+404	SELECT COUNT(*) FROM products WHERE price < 2000;
++----------+
+| COUNT(*) |
++----------+
+|       12 |
++----------+
+
+подсчёт товарных позиций в каждом из каталогов
+405	SELECT id_catalog, COUNT(*) AS total 
+FROM products GROUP BY id_catalog ORDER BY total DESC;
++------------+-------+
+| id_catalog | total |
++------------+-------+
+|          1 |     9 |
+|          2 |     6 |
+|          5 |     6 |
+|          4 |     5 |
+|          3 |     4 |
++------------+-------+
+
+405	SELECT COUNT(id_product), COUNT(DISTINCT id_product) FROM orders;
++-------------------+----------------------------+
+| COUNT(id_product) | COUNT(DISTINCT id_product) |
++-------------------+----------------------------+
+|                 5 |                          3 |
++-------------------+----------------------------+
+
+406	SELECT GROUP_CONCAT(id_catalog) FROM catalogs;
++--------------------------+
+| GROUP_CONCAT(id_catalog) |
++--------------------------+
+| 1,2,3,4,5,6              |
++--------------------------+
+
+406	SELECT GROUP_CONCAT(DISTINCT id_product SEPARATOR '-') FROM orders;
++-------------------------------------------------+
+| GROUP_CONCAT(DISTINCT id_product SEPARATOR '-') |
++-------------------------------------------------+
+| 8-10-20                                         |
++-------------------------------------------------+
+
+407	SELECT GROUP_CONCAT(DISTINCT id_product ORDER BY id_product DESC SEPARATOR '-') AS str 
+	FROM orders;
++---------+
+| str     |
++---------+
+| 20-10-8 |
++---------+
+
+407	SELECT GROUP_CONCAT(price ORDER BY id_product DESC) AS str FROM products GROUP BY id_catalog;
++-------------------------------------------------------------------------+
+| str                                                                     |
++-------------------------------------------------------------------------+
+| 5673.00,6147.00,7259.00,1880.00,2747.00,1962.00,2109.00,1969.00,1595.00 |
+| 2289.00,2518.00,5395.00,2289.00,2420.00,1896.00                         |
+| 5886.00,2730.00,1602.00,5156.00                                         |
+| 2468.00,3139.00,2093.00,3589.00,2456.00                                 |
+| 1717.00,1690.00,1932.00,899.00,1179.00,1085.00                          |
++-------------------------------------------------------------------------+
+
+408	SELECT MIN(price) FROM products;
++------------+
+| MIN(price) |
++------------+
+|     899.00 |
++------------+
+
+408	SELECT id_catalog, MIN(price) FROM products GROUP BY id_catalog;
++------------+------------+
+| id_catalog | MIN(price) |
++------------+------------+
+|          1 |    1595.00 |
+|          2 |    1896.00 |
+|          3 |    1602.00 |
+|          4 |    2093.00 |
+|          5 |     899.00 |
++------------+------------+
+
+409	SELECT MIN(name) FROM products;
++--------------------+
+| MIN(name)          |
++--------------------+
+| ASUSTEK A9600XT/TD |
++--------------------+
+
+412	SELECT SUM(price) FROM products;
++------------+
+| SUM(price) |
++------------+
+|   85769.00 |
++------------+
+
+412	SELECT id_catalog, SUM(price) 
+	FROM products GROUP BY id_catalog;
++------------+------------+
+| id_catalog | SUM(price) |
++------------+------------+
+|          1 |   31341.00 |
+|          2 |   16807.00 |
+|          3 |   15374.00 |
+|          4 |   13745.00 |
+|          5 |    8502.00 |
++------------+------------+
+
+413	SELECT id_catalog, SUM(price) 
+	FROM products 
+	GROUP BY id_catalog WITH ROLLUP;
++------------+------------+
+| id_catalog | SUM(price) |
++------------+------------+
+|          1 |   31341.00 |
+|          2 |   16807.00 |
+|          3 |   15374.00 |
+|          4 |   13745.00 |
+|          5 |    8502.00 |
+|       NULL |   85769.00 |
++------------+------------+
+
+414	SELECT id_catalog,count, SUM(price) 
+	FROM products
+	GROUP BY id_catalog,count WITH ROLLUP;
++------------+-------+------------+
+| id_catalog | count | SUM(price) |
++------------+-------+------------+
+|          1 |     1 |    8109.00 |
+|          1 |     2 |    1969.00 |
+|          1 |     4 |    2109.00 |
+|          1 |     5 |    7259.00 |
+|          1 |     6 |    4627.00 |
+|          1 |    10 |    1595.00 |
+|          1 |    12 |    5673.00 |
+|          1 |  NULL |   31341.00 |
+|          2 |     2 |    2420.00 |
+|          2 |     4 |    7291.00 |
+|          2 |     5 |    2289.00 |
+|          2 |     6 |    4807.00 |
+|          2 |  NULL |   16807.00 |
+|          3 |     0 |    5156.00 |
+|          3 |     3 |    2730.00 |
+|          3 |     6 |    7488.00 |
+|          3 |  NULL |   15374.00 |
+|          4 |     3 |    3139.00 |
+|          4 |     4 |    3589.00 |
+|          4 |     5 |    2093.00 |
+|          4 |     6 |    2456.00 |
+|          4 |     8 |    2468.00 |
+|          4 |  NULL |   13745.00 |
+|          5 |     8 |    1717.00 |
+|          5 |    10 |     899.00 |
+|          5 |    12 |    1690.00 |
+|          5 |    15 |    1179.00 |
+|          5 |    20 |    3017.00 |
+|          5 |  NULL |    8502.00 |
+|       NULL |  NULL |   85769.00 |
++------------+-------+------------+
+
+416	SELECT id_catalog, count, SUM(price) 
+FROM products 
+GROUP BY count, id_catalog WITH ROLLUP LIMIT 5;
++------------+-------+------------+
+| id_catalog | count | SUM(price) |
++------------+-------+------------+
+|          3 |     0 |    5156.00 |
+|       NULL |     0 |    5156.00 |
+|          1 |     1 |    8109.00 |
+|       NULL |     1 |    8109.00 |
+|          1 |     2 |    1969.00 |
++------------+-------+------------+
+
+419	SELECT name, count, IF(count>5,'Достаточно','Заканчивается') AS status 
+FROM products LIMIT 10;
++------------------------+-------+----------------------------+
+| name                   | count | status                     |
++------------------------+-------+----------------------------+
+| Celeron 1.8            |    10 | Достаточно                 |
+| Celeron 2.0GHz         |     2 | Заканчивается              |
+| Celeron 2.4GHz         |     4 | Заканчивается              |
+| Celeron D 320 2.4GHz   |     1 | Заканчивается              |
+| Celeron D 325 2.53GHz  |     6 | Достаточно                 |
+| Celeron D 315 2.26GHz  |     6 | Достаточно                 |
+| Intel Pentium 4 2.8GHz |     5 | Заканчивается              |
+| Intel Pentium 4 3.0GHz |     1 | Заканчивается              |
+| Intel Pentium 4 3.0GHz |    12 | Достаточно                 |
+| Gigabyte GA-8I848P-RS  |     4 | Заканчивается              |
++------------------------+-------+----------------------------+
+
+421	SELECT IFNULL(phone,'отсутствует') AS phone, IFNULL(email,'отсутствует') AS email, IFNULL(url,'отсутствует') AS url 
+	FROM users;
++------------------------+------------------------+-------------------------+
+| phone                  | email                  | url                     |
++------------------------+------------------------+-------------------------+
+| 58-98-78               | ivanov@email.ru        | отсутствует             |
+| 9057777777             | losev@email.ru         | отсутствует             |
+| 9056666100             | simdyanov@softtime.ru  | http://www.softtime.ru/ |
+| отсутствует            | kuznetsov@softtimeru   | http://www.softtime.ru  |
+| отсутствует            | отсутствует            | отсутствует             |
+| 89-78-36               | korneev@domen.ru       | отсутствует             |
++------------------------+------------------------+-------------------------+
+
+447	Вложенные запросы
+SELECT name, price 
+	FROM products 
+	WHERE id_catalog = (SELECT id_catalog FROM catalogs WHERE name = 'Процессоры') 
+	ORDER BY price;
++------------------------+---------+
+| name                   | price   |
++------------------------+---------+
+| Celeron 1.8            | 1595.00 |
+| Celeron D 315 2.26GHz  | 1880.00 |
+| Celeron D 320 2.4GHz   | 1962.00 |
+| Celeron 2.0GHz         | 1969.00 |
+| Celeron 2.4GHz         | 2109.00 |
+| Celeron D 325 2.53GHz  | 2747.00 |
+| Intel Pentium 4 3.0GHz | 5673.00 |
+| Intel Pentium 4 3.0GHz | 6147.00 |
+| Intel Pentium 4 2.8GHz | 7259.00 |
++------------------------+---------+
+
+448	SELECT products.name, products.price 
+	FROM catalogs, products 
+	WHERE catalogs.id_catalog = products.id_catalog 
+	  AND catalogs.name = 'Процессоры' 
+	ORDER BY price;
++------------------------+---------+
+| name                   | price   |
++------------------------+---------+
+| Celeron 1.8            | 1595.00 |
+| Celeron D 315 2.26GHz  | 1880.00 |
+| Celeron D 320 2.4GHz   | 1962.00 |
+| Celeron 2.0GHz         | 1969.00 |
+| Celeron 2.4GHz         | 2109.00 |
+| Celeron D 325 2.53GHz  | 2747.00 |
+| Intel Pentium 4 3.0GHz | 5673.00 |
+| Intel Pentium 4 3.0GHz | 6147.00 |
+| Intel Pentium 4 2.8GHz | 7259.00 |
++------------------------+---------+
+
+449	SELECT name 
+	FROM catalogs 
+	WHERE id_catalog = (SELECT id_catalog FROM products WHERE price = (SELECT MAX(price) FROM products));
++----------------------+
+| name                 |
++----------------------+
+| Процессоры           |
++----------------------+
+
+450	SELECT id_catalog, (SELECT MAX(price) FROM products) FROM catalogs;
++------------+-----------------------------------+
+| id_catalog | (SELECT MAX(price) FROM products) |
++------------+-----------------------------------+
+|          1 |                           7259.00 |
+|          2 |                           7259.00 |
+|          3 |                           7259.00 |
+|          4 |                           7259.00 |
+|          5 |                           7259.00 |
+|          6 |                           7259.00 |
++------------+-----------------------------------+
+
+455	SELECT name, surname 
+	FROM users WHERE id_user = ANY (SELECT id_user FROM orders);
++--------------------+------------------+
+| name               | surname          |
++--------------------+------------------+
+| Александр          | Иванов           |
+| Игорь              | Симдянов         |
+| Александр          | Корнеев          |
++--------------------+------------------+
+
+456	SELECT name, surname 
+	FROM users WHERE id_user <> ANY (SELECT id_user FROM orders);
++--------------------+--------------------+
+| name               | surname            |
++--------------------+--------------------+
+| Александр          | Иванов             |
+| Сергей             | Лосев              |
+| Игорь              | Симдянов           |
+| Максим             | Кузнецов           |
+| Анатолий           | Нехорошев          |
+| Александр          | Корнеев            |
++--------------------+--------------------+
+
+457	SELECT name, price 
+	FROM products WHERE price > ALL (SELECT AVG(price) FROM products GROUP BY id_catalog);
++--------------------------+---------+
+| name                     | price   |
++--------------------------+---------+
+| Intel Pentium 4 2.8GHz   | 7259.00 |
+| Intel Pentium 4 3.0GHz   | 6147.00 |
+| Intel Pentium 4 3.0GHz   | 5673.00 |
+| Asustek P4C800-E Delux   | 5395.00 |
+| ASUSTEK A9600XT/TD       | 5156.00 |
+| GIGABYTE AGP GV-N59X128D | 5886.00 |
++--------------------------+---------+
+
+	Среднее значение
+457	SELECT AVG(price) 
+	FROM products GROUP BY id_catalog;
++-------------+
+| AVG(price)  |
++-------------+
+| 3482.333333 |
+| 2801.166667 |
+| 3843.500000 |
+| 2749.000000 |
+| 1417.000000 |
++-------------+
+
+458	SELECT id_product, name, price 
+	FROM products WHERE EXISTS (SELECT * FROM orders WHERE orders.id_product = products.id_product);
++------------+------------------------+---------+
+| id_product | name                   | price   |
++------------+------------------------+---------+
+|          8 | Intel Pentium 4 3.0GHz | 6147.00 |
+|         10 | Gigabyte GA-8I848P-RS  | 1896.00 |
+|         20 | Maxtor 6Y120P0         | 2456.00 |
++------------+------------------------+---------+
+
+459	SELECT id_product, name, price 
+	FROM products WHERE EXISTS (SELECT 7 FROM orders WHERE orders.id_product = products.id_product);
++------------+------------------------+---------+
+| id_product | name                   | price   |
++------------+------------------------+---------+
+|          8 | Intel Pentium 4 3.0GHz | 6147.00 |
+|         10 | Gigabyte GA-8I848P-RS  | 1896.00 |
+|         20 | Maxtor 6Y120P0         | 2456.00 |
++------------+------------------------+---------+
+
+460	SELECT name, surname 
+	FROM users WHERE EXISTS (SELECT * FROM orders WHERE orders.id_user = users.id_user);
++--------------------+------------------+
+| name               | surname          |
++--------------------+------------------+
+| Александр          | Иванов           |
+| Игорь              | Симдянов         |
+| Александр          | Корнеев          |
++--------------------+------------------+
+
+460	SELECT name, surname 
+	FROM users WHERE NOT EXISTS (SELECT * FROM orders WHERE orders.id_user = users.id_user);
++------------------+--------------------+
+| name             | surname            |
++------------------+--------------------+
+| Сергей           | Лосев              |
+| Максим           | Кузнецов           |
+| Анатолий         | Нехорошев          |
++------------------+--------------------+
+
+461	SELECT name, count 
+	FROM products WHERE count = (SELECT SUM(count) FROM orders WHERE orders.id_product = products.id_product);
++------------------------+-------+
+| name                   | count |
++------------------------+-------+
+| Intel Pentium 4 3.0GHz |     1 |
+| Gigabyte GA-8I848P-RS  |     4 |
++------------------------+-------+
+
+462	SELECT name, price, count, mark 
+	FROM products WHERE ROW(6,4) = (count,mark);
++---------------------------+---------+-------+------+
+| name                      | price   | count | mark |
++---------------------------+---------+-------+------+
+| Asustek P4P800-VM\L i865G | 2518.00 |     6 |  4.0 |
+| ASUSTEK V9520X            | 1602.00 |     6 |  4.0 |
++---------------------------+---------+-------+------+
+
+462	SELECT name, price, count, mark 
+	FROM products WHERE count = 5 AND mark =4;
++-----------------+---------+-------+------+
+| name            | price   | count | mark |
++-----------------+---------+-------+------+
+| Epox EP-4PDA3I  | 2289.00 |     5 |  4.0 |
+| Samsung SP0812C | 2093.00 |     5 |  4.0 |
++-----------------+---------+-------+------+
+
+463	SELECT ordertime 
+	FROM orders 
+	WHERE (id_user, id_product) 
+	IN (SELECT users.id_user, products.id_product FROM users, products WHERE products.price > 1000 AND users.status ='gold');
++---------------------+
+| ordertime           |
++---------------------+
+| 2005-02-10 09:40:29 |
++---------------------+
+
+464	SELECT usr.surname, usr.name, orders.ordertime 
+	FROM orders, (SELECT * FROM users) AS usr 
+	WHERE orders.id_user = usr.id_user;
++------------------+--------------------+---------------------+
+| surname          | name               | ordertime           |
++------------------+--------------------+---------------------+
+| Иванов           | Александр          | 2005-02-18 13:41:05 |
+| Симдянов         | Игорь              | 2005-01-04 10:39:38 |
+| Симдянов         | Игорь              | 2005-03-10 18:20:00 |
+| Симдянов         | Игорь              | 2005-03-17 19:15:36 |
+| Корнеев          | Александр          | 2005-02-10 09:40:29 |
++------------------+--------------------+---------------------+
+
+464	SELECT 	users.name, goods.productname, goods.catalogname 
+	FROM orders, 
+	(
+		SELECT id_user, 
+		CONCAT (surname, " ", SUBSTRING(name,1,1), ".", 
+		SUBSTRING(patronymic,1,1), ".") AS name 
+		FROM users
+		) AS users, 
+		(SELECT products.id_product AS id_product, 
+			products.name AS productname, 
+			catalogs.name AS catalogname
+		FROM products, catalogs 
+		WHERE products.id_catalog = catalogs.id_catalog
+		) AS goods 
+	WHERE orders.id_user = users.id_user AND
+		orders.id_product = goods.id_product;
++-------------------------+------------------------+-----------------------------------+
+| name                    | productname            | catalogname                       |
++-------------------------+------------------------+-----------------------------------+
+| Симдянов И.В.           | Intel Pentium 4 3.0GHz | Процессоры                        |
+| Корнеев А.А.            | Gigabyte GA-8I848P-RS  | Материнские платы                 |
+| Иванов А.В.             | Maxtor 6Y120P0         | Жёсткие диски                     |
+| Симдянов И.В.           | Maxtor 6Y120P0         | Жёсткие диски                     |
+| Симдянов И.В.           | Maxtor 6Y120P0         | Жёсткие диски                     |
++-------------------------+------------------------+-----------------------------------+
+
+466	SELECT id_catalog, SUM(count) 
+	FROM products GROUP BY id_catalog;
++------------+------------+
+| id_catalog | SUM(count) |
++------------+------------+
+|          1 |         47 |
+|          2 |         27 |
+|          3 |         15 |
+|          4 |         26 |
+|          5 |         85 |
++------------+------------+
+
+474	SELECT id_product, id_catalog, name 
+	FROM products WHERE id_catalog = 4;
++------------+------------+------------------------------+
+| id_product | id_catalog | name                         |
++------------+------------+------------------------------+
+|         20 |          4 | Maxtor 6Y120P0               |
+|         21 |          4 | Maxtor 6B200P0               |
+|         22 |          4 | Samsung SP0812C              |
+|         23 |          4 | Seagate Barracuda ST3160023A |
+|         24 |          4 | Seagate ST3120026A           |
++------------+------------+------------------------------+
+
+480	SELECT id_order, surname 
+	FROM orders, users WHERE orders.id_user = users.id_user;
++----------+------------------+
+| id_order | surname          |
++----------+------------------+
+|        1 | Симдянов         |
+|        2 | Корнеев          |
+|        3 | Иванов           |
+|        4 | Симдянов         |
+|        5 | Симдянов         |
++----------+------------------+

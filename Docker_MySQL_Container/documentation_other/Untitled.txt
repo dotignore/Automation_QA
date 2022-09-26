@@ -1,0 +1,58 @@
+docker pull mysql:5.7.38
+docker pull mysql:5.7.38-debian
+
+docker run --name=mysql:5.7.38 -d mysql:5.7.38
+docker run --name mysql -e MYSQL_ROOT_PASSWORD= -d mysql:5.7.38
+
+docker pull mysql:8.0
+docker pull mysql:8
+docker pull mysql:5
+docker pull mysql:5-debian
+
+========================================
+
+docker build -t mysql_5:5.10 .
+
+docker images
+
+docker run --detach --name=mysql --publish 3307:3306 mysql_5:5.10
+
+
+mysql -u root -p base root
+
+
+========================================
+# docer
+docker version
+docker image ls
+docker run 459651132a11
+docker pull node
+docker images
+docker run node
+docker ps
+docker ps -a		/ все запущені контейнери
+docker run -it node
+	> 1+1
+	2
+	> process.version
+	'v18.5.0'
+	> .exit
+
+docker ps -a 
+docker rm 237eecb30bb4		/ видалити контейнер
+
+docker container prune		/ This will remove all stopped containers.
+
+
+
+
+
+========================================
+
+docker run -p 3000:3000 paulogoncalvesbh/serverest:latest
+
+1) docker pull mysql/mysql-server
+
+
+docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=123456 mysql
+docker run -p 3306:3306 --name nodejs-mysql -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=emails_db -d mysql:5.7

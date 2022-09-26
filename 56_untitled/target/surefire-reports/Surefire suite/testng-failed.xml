@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.testautomationguru.container.test.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="googleTest"/>
+          <include name="setUp"/>
+          <include name="initialDelay"/>
+        </methods>
+      </class> <!-- com.testautomationguru.container.test.SearchTest -->
+      <class name="com.testautomationguru.container.test.OrderTest">
+        <methods>
+          <include name="googleTest"/>
+          <include name="tearDown"/>
+          <include name="initialDelay"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.testautomationguru.container.test.OrderTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

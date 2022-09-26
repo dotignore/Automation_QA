@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: test.Day1
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 61.751 sec <<< FAILURE! - in test.Day1
+validateOnPrice1(test.Day1)  Time elapsed: 14.157 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/WrapsDriver
+	at test.Day1.validateOnPrice1(Day1.java:59)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WrapsDriver
+	at test.Day1.validateOnPrice1(Day1.java:59)
+
+validateOnPrice1(test.Day1)  Time elapsed: 12.175 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/WrapsDriver
+	at test.Day1.validateOnPrice1(Day1.java:59)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WrapsDriver
+	at test.Day1.validateOnPrice1(Day1.java:59)
+
+validateOnPrice1(test.Day1)  Time elapsed: 11.911 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/WrapsDriver
+	at test.Day1.validateOnPrice1(Day1.java:59)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WrapsDriver
+	at test.Day1.validateOnPrice1(Day1.java:59)
+

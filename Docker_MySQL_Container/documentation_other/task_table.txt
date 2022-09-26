@@ -1,0 +1,50 @@
+https://dev.mysql.com/doc/refman/8.0/en/create-user.html
+
+
+Test 1 (correct data)
+------
+Insert new record to table
+Field 1, Field 2, Field 3, Field 4 ...
+ 
+Select record
+
+Delete Record
+
+
+Test 2 (correct data)
+------
+Insert new record to table
+
+Update record
+
+Delete Record
+
+
+Test 3 (Null)
+------
+
+Insert new record to table
+Field 1, Null, Field 3, Field 4 ...
+
+Select record
+
+Delete Record
+
+- - - - - - - - - - - - - - - - - - - -
+Input null
+Input  number, char, ... to 
+
+
+
+ Check connection
+
+ 
+) create record in table 	(check) + print to console
+) read record 			(check) + print to console
+) update record			(check) + print to console
+) delete record			(check) + print to console
+
+- - - - - - - - - - - - - - - - - - - -
+
+Allure report
+

@@ -1,0 +1,7 @@
+[INFO  - 2022-08-05T15:57:24.225Z] GhostDriver - Main - running on port 33627
+[INFO  - 2022-08-05T15:57:24.577Z] Session [4c1b38d0-14d7-11ed-96f0-9f0758dba53e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2022-08-05T15:57:24.577Z] Session [4c1b38d0-14d7-11ed-96f0-9f0758dba53e] - page.customHeaders:  - {}
+[INFO  - 2022-08-05T15:57:24.578Z] Session [4c1b38d0-14d7-11ed-96f0-9f0758dba53e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2022-08-05T15:57:24.578Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4c1b38d0-14d7-11ed-96f0-9f0758dba53e
+[ERROR - 2022-08-05T15:57:35.969Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1659715055928
+[INFO  - 2022-08-05T15:57:36.393Z] ShutdownReqHand - _handle - About to shutdown

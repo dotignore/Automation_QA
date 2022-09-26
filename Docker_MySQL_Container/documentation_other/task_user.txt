@@ -1,0 +1,77 @@
+------------------
+# Create User too access DB
+------------------
+# https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+- - - - - - - - - - - - - - - - - - - -
+
+mysql -u root -p
+
+p: userdb
+l: userdb
+
+CREATE USER 'userdb'@'localhost' IDENTIFIED BY 'userdb';
+CREATE USER 'userdb'@'%' IDENTIFIED BY 'userdb';
+
+GRANT ALL PRIVILEGES ON *.* TO 'userdb'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'userdb'@'%' WITH GRANT OPTION;
+
+#
+#GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'userdb'@'localhost' WITH GRANT OPTION;
+#GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'userdb'@'%' WITH GRANT OPTION;
+
+Exit
+
+# check enter to DB
+mysql -u userdb -p
+
+OK
+
+------------------
+# Change pass User
+------------------
+
+mysql -u userdb -p
+
+SET PASSWORD FOR 'userdb'@'localhost' = PASSWORD('dbuser');
+
+exit
+
+mysql -u userdb -p
+new pass 
+
+Exit
+
+
+------------------
+# drop user
+------------------
+
+mysql -u userdb -p
+
+DROP user 'userdb'@'localhost';
+DROP user 'userdb'@'%';
+
+exit
+
+mysql -u root -p
+
+SELECT DISTINCT User FROM mysql.user;
+
+userdb there isn't user in list
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

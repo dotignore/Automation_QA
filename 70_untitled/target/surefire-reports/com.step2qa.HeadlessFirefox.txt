@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.step2qa.HeadlessFirefox
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 35.335 sec <<< FAILURE! - in com.step2qa.HeadlessFirefox
+setup(com.step2qa.HeadlessFirefox)  Time elapsed: 30.184 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+The driver server has unexpectedly died!
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IgNOrEs-iMac.local', ip: 'fd94:a79a:9ca5:0:44c0:6ed0:bdd5:8d18%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+	at com.step2qa.HeadlessFirefox.setup(HeadlessFirefox.java:32)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:35053
+	at com.step2qa.HeadlessFirefox.setup(HeadlessFirefox.java:32)
+Caused by: java.net.ConnectException: Connection refused
+	at com.step2qa.HeadlessFirefox.setup(HeadlessFirefox.java:32)
+

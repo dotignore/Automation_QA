@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="35.875" tests="92" errors="0" skipped="91" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.4.1+1"/>
+    <property name="sun.boot.library.path" value="/opt/java/openjdk/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/usr/autotest"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/usr/autotest"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17.0.4.1+1"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.10.104-linuxkit"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/opt/java/openjdk"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-08-12"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.4.1+1"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+  </properties>
+  <testcase name="startDriver" classname="tests.AddReviewPageTest" time="27.888">
+    <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'c4964ff105f3', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '17.0.4.1'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:10999/status] to be available after 20008 ms
+Caused by: java.util.concurrent.TimeoutException
+</failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+/usr/autotest/Resources/chromedriver: 1: Έ&amp#21;… &amp#25;H__PAGEZERO&amp#1;&amp#25;h&amp#3;__TEXT&amp#1;: not found
+/usr/autotest/Resources/chromedriver: 2: Syntax error: word unexpected (expecting ")")
+/usr/autotest/Resources/chromedriver: 1: Οϊνώ&amp#7;&amp#1;&amp#3;€&amp#2;: not found
+Sep 06, 2022 1:49:39 PM org.openqa.selenium.os.OsProcess checkForError
+SEVERE: org.apache.commons.exec.ExecuteException: Process exited with an error: 2 (Exit value: 2)
+]]></system-err>
+  </testcase>
+  <testcase name="testRegistrationPage" classname="tests.AddReviewPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchForItem" classname="tests.AddReviewPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="addProductReview" classname="tests.AddReviewPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogout" classname="tests.AddReviewPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="searchForItemAndAddItToCart" classname="tests.AddToCartPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="userCanAddToCart" classname="tests.AddToCartPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="userCanChangeQuantity" classname="tests.AddToCartPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="userCanClearCart" classname="tests.AddToCartPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="searchForItemsAndAddThemToCompareList" classname="tests.AddToCompareListTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCompareListTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCompareListTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clearCompareListItems" classname="tests.AddToCompareListTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="userCanChangecurrency" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchForItemUsingAutoSuggession" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="userCanChangecurrencyAgain" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="fillContactUsForm" classname="tests.ContactUsPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.ContactUsPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRegistrationPage" classname="tests.EmailFriendPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchForItem" classname="tests.EmailFriendPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="emailAFriend" classname="tests.EmailFriendPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogout" classname="tests.EmailFriendPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="searchForItemAndAddItToCart" classname="tests.GuestCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="userCanAddToCart" classname="tests.GuestCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="guestUserCanCheckout" classname="tests.GuestCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="downloadAndPrintInvoice" classname="tests.GuestCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="userCanHoverMenu" classname="tests.HoverMenuTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.HoverMenuTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRegistrationPage" classname="tests.MyAccountPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testChangePassword" classname="tests.MyAccountPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogout" classname="tests.MyAccountPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogin" classname="tests.MyAccountPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testRegistrationPage" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchForItemAndAddItToCart" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="userCanAddToCart" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="downloadAndPrintInvoice" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogout" classname="tests.RegisteredUserCheckoutTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testRegistrationPage" classname="tests.RegistrationPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickingLogout" classname="tests.RegistrationPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogin" classname="tests.RegistrationPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogoutAgain" classname="tests.RegistrationPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="searchForItemUsingAutoSuggession" classname="tests.SearchPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.SearchPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+]]></system-out>
+  </testcase>
+  <testcase name="testRegistrationPage" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickingLogout" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogin" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="testClickingLogoutAgain" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.SeleniumGridRegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="searchForItemUsingAutoSuggession" classname="tests.WishlistPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+    <system-out><![CDATA[No features found at [classpath:tests]
+
+0 Scenarios
+0 Steps
+0m0.000s
+
+No features found at [classpath:tests]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.WishlistPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.WishlistPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="takeScreenshotOnFailure" classname="tests.WishlistPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="addProductTowishlist" classname="tests.WishlistPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="removeProductFromWishlist" classname="tests.WishlistPageTest" time="0">
+    <skipped message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;c4964ff105f3&apos;, ip: &apos;172.17.0.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: ChromeDriver"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.AddReviewPageTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+0 Scenarios
+0 Steps
+0m0.000s
+
+]]></system-out>
+  </testcase>
+</testsuite>

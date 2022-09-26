@@ -1,0 +1,17 @@
+/usr/autotest/src/main/java/pages/PageBase.java
+/usr/autotest/src/main/java/pages/AddReviewPage.java
+/usr/autotest/src/main/java/pages/MyAccountPage.java
+/usr/autotest/src/main/java/pages/SearchPage.java
+/usr/autotest/src/main/java/pages/LoginPage.java
+/usr/autotest/src/main/java/pages/CheckoutPage.java
+/usr/autotest/src/main/java/pages/EmailFriendPage.java
+/usr/autotest/src/main/java/pages/AddToCompareListPage.java
+/usr/autotest/src/main/java/pages/AddtoCartPage.java
+/usr/autotest/src/main/java/pages/ProductDetailsPage.java
+/usr/autotest/src/main/java/pages/RegistrationPage.java
+/usr/autotest/src/main/java/pages/ContactUsPage.java
+/usr/autotest/src/main/java/pages/WishlistPage.java
+/usr/autotest/src/main/java/pages/SearchResult.java
+/usr/autotest/src/main/java/pages/RegistrationPageWait.java
+/usr/autotest/src/main/java/pages/HomePage.java
+/usr/autotest/src/main/java/pages/OrderDetails.java

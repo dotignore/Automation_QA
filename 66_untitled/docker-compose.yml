@@ -1,0 +1,8 @@
+version: "2"
+services:
+  standalone-firefox:
+    image: selenium/standalone-firefox:3.11
+    ports:
+      - 4444:4444
+      - 5900:5900
+       

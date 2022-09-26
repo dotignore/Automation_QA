@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-19T16:54:51 IST" name="Default suite" finished-at="2021-09-19T16:55:19 IST" duration-ms="28806">
+    <groups>
+    </groups>
+    <test started-at="2021-09-19T16:54:51 IST" name="Default test" finished-at="2021-09-19T16:55:19 IST" duration-ms="28806">
+      <class name="BarCode.BarCodeTest">
+        <test-method signature="barCodeConcept()[pri:0, instance:BarCode.BarCodeTest@3ba987b8]" started-at="2021-09-19T16:54:51 IST" name="barCodeConcept" finished-at="2021-09-19T16:55:19 IST" duration-ms="28759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- barCodeConcept -->
+      </class> <!-- BarCode.BarCodeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

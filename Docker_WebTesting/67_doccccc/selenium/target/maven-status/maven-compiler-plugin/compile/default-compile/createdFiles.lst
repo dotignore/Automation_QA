@@ -1,0 +1,16 @@
+pages/MyAccountPage.class
+pages/AddToCompareListPage.class
+pages/HomePage.class
+pages/OrderDetails.class
+pages/RegistrationPage.class
+pages/EmailFriendPage.class
+pages/CheckoutPage.class
+pages/ContactUsPage.class
+pages/AddReviewPage.class
+pages/SearchResult.class
+pages/LoginPage.class
+pages/PageBase.class
+pages/AddtoCartPage.class
+pages/ProductDetailsPage.class
+pages/SearchPage.class
+pages/WishlistPage.class

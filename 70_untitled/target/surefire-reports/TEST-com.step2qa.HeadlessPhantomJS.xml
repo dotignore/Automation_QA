@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="com.step2qa.HeadlessPhantomJS" time="5.747" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.1.1+0"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/ignore/Documents/Selenium/70_untitled"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="com.step2qa.HeadlessPhantomJS"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/ignore/Documents/Selenium/70_untitled"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="18.0.1.1+0"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/0x/404db83n0l3f2zy_fzdv78440000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.6/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ignore/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.6/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.6/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/ignore"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="ignore"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=com.step2qa.HeadlessPhantomJS"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.6/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="com.step2qa.HeadlessPhantomJS" name="open_headless_phantomJS" time="5.747">
+    <failure message="{&quot;errorMessage&quot;:&quot;Unable to find element with xpath &apos;//ol//a[contains(text(),&apos;Elevate Quality Engineering&apos;)]&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;112&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:33627&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java mac)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;xpath\&quot;,\n  \&quot;value\&quot;: \&quot;\\u002f\\u002fol\\u002f\\u002fa[contains(text(),&apos;Elevate Quality Engineering&apos;)]\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/4c1b38d0-14d7-11ed-96f0-9f0758dba53e/element&quot;}}
+Command duration or timeout: 0 milliseconds" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with xpath &apos;//ol//a[contains(text(),&apos;Elevate Quality Engineering&apos;)]&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;112&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:33627&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java mac)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;xpath\&quot;,\n  \&quot;value\&quot;: \&quot;\\u002f\\u002fol\\u002f\\u002fa[contains(text(),&apos;Elevate Quality Engineering&apos;)]\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/4c1b38d0-14d7-11ed-96f0-9f0758dba53e/element&quot;}}
+Command duration or timeout: 0 milliseconds
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.step2qa.HeadlessPhantomJS.open_headless_phantomJS(HeadlessPhantomJS.java:49)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with xpath &apos;//ol//a[contains(text(),&apos;Elevate Quality Engineering&apos;)]&apos;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept-Encoding&quot;:&quot;gzip&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;112&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:33627&quot;,&quot;User-Agent&quot;:&quot;selenium/3.141.59 (java mac)&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\n  \&quot;using\&quot;: \&quot;xpath\&quot;,\n  \&quot;value\&quot;: \&quot;\\u002f\\u002fol\\u002f\\u002fa[contains(text(),&apos;Elevate Quality Engineering&apos;)]\&quot;\n}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/4c1b38d0-14d7-11ed-96f0-9f0758dba53e/element&quot;}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:44c0:6ed0:bdd5:8d18%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: unknown
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@3c679bde
+-----  Initiating the browser instance -----
+Opening Google in browser.
+Typing Step2QA in Google Search
+Search Step2QA
+Click on Step2QA link
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Aug 05, 2022 6:57:23 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: executable: /Users/ignore/.m2/repository/webdriver/phantomjs/macosx/2.1.1/phantomjs
+Aug 05, 2022 6:57:23 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: port: 33627
+Aug 05, 2022 6:57:23 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: arguments: [--webdriver=33627, --webdriver-logfile=/Users/ignore/Documents/Selenium/70_untitled/phantomjsdriver.log]
+Aug 05, 2022 6:57:23 PM org.openqa.selenium.phantomjs.PhantomJSDriverService &lt;init&gt;
+INFO: environment: {}
+[INFO  - 2022-08-05T15:57:24.225Z] GhostDriver - Main - running on port 33627
+[INFO  - 2022-08-05T15:57:24.577Z] Session [4c1b38d0-14d7-11ed-96f0-9f0758dba53e] - page.settings - {&quot;XSSAuditingEnabled&quot;:false,&quot;javascriptCanCloseWindows&quot;:true,&quot;javascriptCanOpenWindows&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;loadImages&quot;:true,&quot;localToRemoteUrlAccessEnabled&quot;:false,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1&quot;,&quot;webSecurityEnabled&quot;:true}
+[INFO  - 2022-08-05T15:57:24.577Z] Session [4c1b38d0-14d7-11ed-96f0-9f0758dba53e] - page.customHeaders:  - {}
+[INFO  - 2022-08-05T15:57:24.578Z] Session [4c1b38d0-14d7-11ed-96f0-9f0758dba53e] - Session.negotiatedCapabilities - {&quot;browserName&quot;:&quot;phantomjs&quot;,&quot;version&quot;:&quot;2.1.1&quot;,&quot;driverName&quot;:&quot;ghostdriver&quot;,&quot;driverVersion&quot;:&quot;1.2.0&quot;,&quot;platform&quot;:&quot;mac-unknown-64bit&quot;,&quot;javascriptEnabled&quot;:true,&quot;takesScreenshot&quot;:true,&quot;handlesAlerts&quot;:false,&quot;databaseEnabled&quot;:false,&quot;locationContextEnabled&quot;:false,&quot;applicationCacheEnabled&quot;:false,&quot;browserConnectionEnabled&quot;:false,&quot;cssSelectorsEnabled&quot;:true,&quot;webStorageEnabled&quot;:false,&quot;rotatable&quot;:false,&quot;acceptSslCerts&quot;:false,&quot;nativeEvents&quot;:true,&quot;proxy&quot;:{&quot;proxyType&quot;:&quot;direct&quot;}}
+[INFO  - 2022-08-05T15:57:24.578Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4c1b38d0-14d7-11ed-96f0-9f0758dba53e
+Aug 05, 2022 6:57:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[ERROR - 2022-08-05T15:57:35.969Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1659715055928
+
+  phantomjs://platform/console++.js:263 in error
+</system-err>
+  </testcase>
+</testsuite>

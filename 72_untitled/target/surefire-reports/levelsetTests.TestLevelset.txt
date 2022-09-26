@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: levelsetTests.TestLevelset
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 6.66 s - in levelsetTests.TestLevelset

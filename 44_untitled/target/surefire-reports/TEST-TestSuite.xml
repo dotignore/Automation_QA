@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="11.099" tests="3" errors="0" skipped="2" failures="1">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.6/libexec/conf"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.6/libexec"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ignore"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.1.1+0"/>
+    <property name="user.name" value="ignore"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/0x/404db83n0l3f2zy_fzdv78440000gn/T/"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="/Users/ignore/Downloads/44_Dockerfile_pom/selenium-docker-master"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/ignore/Downloads/44_Dockerfile_pom/selenium-docker-master"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ignore/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18.0.1.1+0"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.6/libexec/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.6/libexec/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="setUp" classname="google.SearchButtonTest" time="4.9">
+    <failure message="session not created: This version of ChromeDriver only supports Chrome version 87&#10;Current browser version is 103.0.5060.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:edc0:4e6e:a384:32b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: 0   chromedriver                        0x000000010f5ffd79 chromedriver + 2510201&#10;1   chromedriver                        0x000000010fc6c743 chromedriver + 9246531&#10;2   chromedriver                        0x000000010f43a623 chromedriver + 652835&#10;3   chromedriver                        0x000000010f3b3bd7 chromedriver + 101335&#10;4   chromedriver                        0x000000010f3afd87 chromedriver + 85383&#10;5   chromedriver                        0x000000010f3acf8f chromedriver + 73615&#10;6   chromedriver                        0x000000010f3e1b44 chromedriver + 289604&#10;7   chromedriver                        0x000000010f3dc923 chromedriver + 268579&#10;8   chromedriver                        0x000000010f3b600a chromedriver + 110602&#10;9   chromedriver                        0x000000010f3b6fc7 chromedriver + 114631&#10;10  chromedriver                        0x000000010f5d1429 chromedriver + 2319401&#10;11  chromedriver                        0x000000010f5dd53f chromedriver + 2368831&#10;12  chromedriver                        0x000000010f5dd150 chromedriver + 2367824&#10;13  chromedriver                        0x000000010f5b823b chromedriver + 2216507&#10;14  chromedriver                        0x000000010f5dda91 chromedriver + 2370193&#10;15  chromedriver                        0x000000010f5c64f9 chromedriver + 2274553&#10;16  chromedriver                        0x000000010f5f3f89 chromedriver + 2461577&#10;17  chromedriver                        0x000000010f6053b3 chromedriver + 2532275&#10;18  libsystem_pthread.dylib             0x00007fff70435109 _pthread_start + 148&#10;19  libsystem_pthread.dylib             0x00007fff70430b8b thread_start + 15&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 103.0.5060.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IgNOrEs-iMac.local', ip: 'fd94:a79a:9ca5:0:edc0:4e6e:a384:32b3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.1.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010f5ffd79 chromedriver + 2510201
+1   chromedriver                        0x000000010fc6c743 chromedriver + 9246531
+2   chromedriver                        0x000000010f43a623 chromedriver + 652835
+3   chromedriver                        0x000000010f3b3bd7 chromedriver + 101335
+4   chromedriver                        0x000000010f3afd87 chromedriver + 85383
+5   chromedriver                        0x000000010f3acf8f chromedriver + 73615
+6   chromedriver                        0x000000010f3e1b44 chromedriver + 289604
+7   chromedriver                        0x000000010f3dc923 chromedriver + 268579
+8   chromedriver                        0x000000010f3b600a chromedriver + 110602
+9   chromedriver                        0x000000010f3b6fc7 chromedriver + 114631
+10  chromedriver                        0x000000010f5d1429 chromedriver + 2319401
+11  chromedriver                        0x000000010f5dd53f chromedriver + 2368831
+12  chromedriver                        0x000000010f5dd150 chromedriver + 2367824
+13  chromedriver                        0x000000010f5b823b chromedriver + 2216507
+14  chromedriver                        0x000000010f5dda91 chromedriver + 2370193
+15  chromedriver                        0x000000010f5c64f9 chromedriver + 2274553
+16  chromedriver                        0x000000010f5f3f89 chromedriver + 2461577
+17  chromedriver                        0x000000010f6053b3 chromedriver + 2532275
+18  libsystem_pthread.dylib             0x00007fff70435109 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00007fff70430b8b thread_start + 15
+
+	at google.SearchButtonTest.setUp(SearchButtonTest.java:18)
+</failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jul 19, 2022 12:29:00 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 40444
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySearchButtonIsDisplayed" classname="google.SearchButtonTest" time="0">
+    <skipped message="session not created: This version of ChromeDriver only supports Chrome version 87&#10;Current browser version is 103.0.5060.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:edc0:4e6e:a384:32b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: 0   chromedriver                        0x000000010f5ffd79 chromedriver + 2510201&#10;1   chromedriver                        0x000000010fc6c743 chromedriver + 9246531&#10;2   chromedriver                        0x000000010f43a623 chromedriver + 652835&#10;3   chromedriver                        0x000000010f3b3bd7 chromedriver + 101335&#10;4   chromedriver                        0x000000010f3afd87 chromedriver + 85383&#10;5   chromedriver                        0x000000010f3acf8f chromedriver + 73615&#10;6   chromedriver                        0x000000010f3e1b44 chromedriver + 289604&#10;7   chromedriver                        0x000000010f3dc923 chromedriver + 268579&#10;8   chromedriver                        0x000000010f3b600a chromedriver + 110602&#10;9   chromedriver                        0x000000010f3b6fc7 chromedriver + 114631&#10;10  chromedriver                        0x000000010f5d1429 chromedriver + 2319401&#10;11  chromedriver                        0x000000010f5dd53f chromedriver + 2368831&#10;12  chromedriver                        0x000000010f5dd150 chromedriver + 2367824&#10;13  chromedriver                        0x000000010f5b823b chromedriver + 2216507&#10;14  chromedriver                        0x000000010f5dda91 chromedriver + 2370193&#10;15  chromedriver                        0x000000010f5c64f9 chromedriver + 2274553&#10;16  chromedriver                        0x000000010f5f3f89 chromedriver + 2461577&#10;17  chromedriver                        0x000000010f6053b3 chromedriver + 2532275&#10;18  libsystem_pthread.dylib             0x00007fff70435109 _pthread_start + 148&#10;19  libsystem_pthread.dylib             0x00007fff70430b8b thread_start + 15&#10;"/>
+  </testcase>
+  <testcase name="tearDown" classname="google.SearchButtonTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

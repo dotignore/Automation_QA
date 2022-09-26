@@ -1,0 +1,5 @@
+wrappers/CreatePropertiesFile.class
+baseMethods/BrowserSetup.class
+baseMethods/BasesMethods.class
+uiActions/CreateDocument.class
+uiActions/HomePage.class

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 92, Failures: 1, Errors: 0, Skipped: 91, Time elapsed: 8.343 sec <<< FAILURE! - in TestSuite
+startDriver(tests.WishlistPageTest)  Time elapsed: 1.968 sec  <<< FAILURE!
+java.lang.NullPointerException
+

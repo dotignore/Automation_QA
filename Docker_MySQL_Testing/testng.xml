@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="nopcommerce">
+    <test name="Regression Test" preserve-order="false">
+        <classes>
+            <class name="OK_TableProducts.MySQLusersTest" />				<!-- 1-5 ok -->
+            <class name="OK_TableProducts.MySQLproductsTest" />				<!-- 6-10 ok -->
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

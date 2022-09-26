@@ -1,0 +1,81 @@
+##############################################################
+# docker pull suranagivinod/openjdk8
+# SH RUNER
+# docker build -t mysql_5:5.10 .
+#
+# docker images
+#
+# docker run --detach --name=mysql --publish 3307:3306 mysql_5:5.10
+#
+# docker exec -ti maven bash
+##############################################################
+
+docker build -t maven:3.8.3-jdk-8 .
+docker run --rm --mount type=bind,src=/Users/ignore/Downloads/44_Dockerfile_pom/selenium-docker-master,target=/src/ pyrtest_runner 
+
+------------------------------------
+
+Allure Add dependency to Pom.xml file
+# mvn site
+# allure serve
+
+
+allure generate allure-results --clean -o allure-report
+
+allure serve allure-results
+
+------------------------------------
+
+docker build -t selenium_docker_sample .
+
+docker run -it selenium_docker_sample
+
+
+echo "<----- Start of tests ----->"
+mvn clean test
+echo "<----- End of tests ----->"
+
+
+sudo docker-compose up
+
+
+apt install default-jre
+java -version
+
+apt install default-jdk
+javac -version
+
+
+mvn clean test -Dtest=<GoogleSearchTest> -Duser=<user> -Dproperty=sample.properties
+mvn clean install 
+mvn -version
+rm -rf /usr/share/maven	
+	/usr/bin/mvn
+mvn dependency:get
+mvn -U package
+mvn -X clean install -pl components -P profile
+mvn -P release release:prepare
+mvn -U dependency:go-offline
+mvn build install org.apache.maven.plugins:maven-archetype-plugin:3.6.0
+mvn clean
+mvn install
+
+------------------------------------
+
+docker build - < Dockerfile
+
+java -jar target/screenshootlibrary-2.0-SNAPSHOT-jar-with-dependencies.jar https://vaadin.com/
+java -jar target/screenshootlibrary-2.0-SNAPSHOT-jar-with-dependencies.jar <url> <filename> <width> <height>
+
+mvn versions:display-dependency-updates
+
+mvn clean test
+mvn test -Dtest=tests
+mvn clean test -Dsurefire.suiteXmlFiles=testNG.xml
+mvn test -Dtest=tests.TestProperties
+mvn test -Dtest=test.testSearchGoogle
+mvn test -Dtest=tests.TestProperties -DfailIfNoTests=false
+
+mvn test -D suite=headless.xml
+mvn clean test -Dsurefire.suiteXmlFiles=/path/to/testng.xml
+

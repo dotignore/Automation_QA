@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 1, Errors: 0, Skipped: 24, Time elapsed: 7.402 s <<< FAILURE! - in TestSuite
+setUp(com.testautomationguru.container.test.OrderTest)  Time elapsed: 2.174 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "java.lang.System.getProperty(String)" is null
+	at com.testautomationguru.container.test.OrderTest.setUp(OrderTest.java:20)
+

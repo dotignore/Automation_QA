@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.step2qa.HeadlessPhantomJS
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 47.457 sec <<< FAILURE!
+open_headless_phantomJS(com.step2qa.HeadlessPhantomJS)  Time elapsed: 5.747 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with xpath '//ol//a[contains(text(),'Elevate Quality Engineering')]'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"112","Content-Type":"application/json; charset=utf-8","Host":"localhost:33627","User-Agent":"selenium/3.141.59 (java mac)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"xpath\",\n  \"value\": \"\\u002f\\u002fol\\u002f\\u002fa[contains(text(),'Elevate Quality Engineering')]\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/4c1b38d0-14d7-11ed-96f0-9f0758dba53e/element"}}
+Command duration or timeout: 0 milliseconds
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.step2qa.HeadlessPhantomJS.open_headless_phantomJS(HeadlessPhantomJS.java:49)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with xpath '//ol//a[contains(text(),'Elevate Quality Engineering')]'","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"112","Content-Type":"application/json; charset=utf-8","Host":"localhost:33627","User-Agent":"selenium/3.141.59 (java mac)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"using\": \"xpath\",\n  \"value\": \"\\u002f\\u002fol\\u002f\\u002fa[contains(text(),'Elevate Quality Engineering')]\"\n}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/4c1b38d0-14d7-11ed-96f0-9f0758dba53e/element"}}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IgNOrEs-iMac.local', ip: 'fd94:a79a:9ca5:0:44c0:6ed0:bdd5:8d18%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.1.1'
+Driver info: driver.version: unknown
+

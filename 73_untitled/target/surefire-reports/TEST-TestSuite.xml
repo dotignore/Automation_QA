@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="28.462" tests="15" errors="0" skipped="12" failures="3">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="webdriver.chrome.driver" value="/Users/ignore/.cache/selenium/chromedriver/mac64/103.0.5060.134/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ignore/Documents/Selenium/73_untitled/target/test-classes:/Users/ignore/Documents/Selenium/73_untitled/target/classes:/Users/ignore/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/ignore/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/ignore/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/ignore/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/ignore/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/ignore/.m2/repository/io/cucumber/gherkin-jvm-deps/1.0.4/gherkin-jvm-deps-1.0.4.jar:/Users/ignore/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.8.1/selenium-remote-driver-3.8.1.jar:/Users/ignore/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/ignore/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/ignore/.m2/repository/com/opencsv/opencsv/4.1/opencsv-4.1.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/ignore/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/Users/ignore/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/ignore/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/ignore/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/ignore/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/ignore/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar:/Users/ignore/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/ignore/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar:/Users/ignore/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/ignore/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/ignore/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-testng/2.13.9/allure-testng-2.13.9.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-java-commons/2.13.9/allure-java-commons-2.13.9.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-model/2.13.9/allure-model-2.13.9.jar:/Users/ignore/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.2/jackson-databind-2.12.2.jar:/Users/ignore/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.2/jackson-annotations-2.12.2.jar:/Users/ignore/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.2/jackson-core-2.12.2.jar:/Users/ignore/.m2/repository/org/apache/tika/tika-core/1.25/tika-core-1.25.jar:/Users/ignore/.m2/repository/org/jooq/joor-java-8/0.9.13/joor-java-8-0.9.13.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-test-filter/2.13.9/allure-test-filter-2.13.9.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/ignore/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/ignore/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/ignore/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/ignore/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/ignore/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/ignore/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/ignore/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/ignore/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/ignore/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/ignore/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/ignore/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/ignore/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/ignore/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/ignore/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/ignore/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/ignore/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/ignore/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/ignore/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/Users/ignore/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/ignore/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/ignore/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/ignore/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/ignore/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ignore/Documents/Selenium/73_untitled/target/surefire/surefirebooter-20220806224023178_3.jar /Users/ignore/Documents/Selenium/73_untitled/target/surefire 2022-08-06T22-40-22_849-jvmRun1 surefire-20220806224023178_1tmp surefire_0-20220806224023178_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/ignore/Documents/Selenium/73_untitled/target/test-classes:/Users/ignore/Documents/Selenium/73_untitled/target/classes:/Users/ignore/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/ignore/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/ignore/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/ignore/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/ignore/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/ignore/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/ignore/.m2/repository/io/cucumber/gherkin-jvm-deps/1.0.4/gherkin-jvm-deps-1.0.4.jar:/Users/ignore/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.8.1/selenium-remote-driver-3.8.1.jar:/Users/ignore/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/ignore/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/ignore/.m2/repository/com/opencsv/opencsv/4.1/opencsv-4.1.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/ignore/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/Users/ignore/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/ignore/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/ignore/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/ignore/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/ignore/.m2/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar:/Users/ignore/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/ignore/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar:/Users/ignore/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/ignore/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/ignore/.m2/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-testng/2.13.9/allure-testng-2.13.9.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-java-commons/2.13.9/allure-java-commons-2.13.9.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-model/2.13.9/allure-model-2.13.9.jar:/Users/ignore/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.2/jackson-databind-2.12.2.jar:/Users/ignore/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.2/jackson-annotations-2.12.2.jar:/Users/ignore/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.2/jackson-core-2.12.2.jar:/Users/ignore/.m2/repository/org/apache/tika/tika-core/1.25/tika-core-1.25.jar:/Users/ignore/.m2/repository/org/jooq/joor-java-8/0.9.13/joor-java-8-0.9.13.jar:/Users/ignore/.m2/repository/io/qameta/allure/allure-test-filter/2.13.9/allure-test-filter-2.13.9.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/ignore/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/ignore/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/ignore/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/ignore/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/ignore/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/ignore/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/ignore/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/ignore/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/ignore/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/ignore/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/ignore/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/ignore/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/ignore/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/ignore/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/ignore/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/ignore/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/ignore/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/ignore/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/Users/ignore/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/ignore/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/ignore/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/ignore/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/ignore/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/ignore/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/ignore/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/ignore/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ignore"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/ignore/Documents/Selenium/73_untitled"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/ignore/Documents/Selenium/73_untitled/target/surefire/surefirebooter-20220806224023178_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.1.1+0"/>
+    <property name="user.name" value="ignore"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/ignore/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/0x/404db83n0l3f2zy_fzdv78440000gn/T/"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="/Users/ignore/Documents/Selenium/73_untitled"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="webdriver.gecko.driver" value="/Users/ignore/.cache/selenium/geckodriver/mac64/0.31.0/geckodriver"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ignore/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18.0.1.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="beforeClass[fireFox](0)" classname="test.Day1" time="14.252">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+	at day1pages.BrowserAction.maxBrowser(BrowserAction.java:69)
+	at test.Day1.beforeClass(Day1.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-out><![CDATA[...
+... TestNG 7.3.0 by CÃ©dric Beust (cedric@beust.com)
+...
+
+cant open browser
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 35764
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 06, 2022 10:40:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateOnPrice1[20-Day Preliminary Notice](1)" classname="test.Day1" time="15.016">
+    <failure message="org/openqa/selenium/WrapsDriver" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/WrapsDriver
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:97)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at day1pages.Util.validation(Util.java:31)
+	at day1pages.Util.clickOnButton(Util.java:47)
+	at day1pages.LevelSetHomePage.clickOnCreateADocument(LevelSetHomePage.java:28)
+	at test.Day1.validateOnPrice1(Day1.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WrapsDriver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 27 more
+]]></failure>
+  </testcase>
+  <testcase name="validateOnPrice1[20-Day Preliminary Notice](1)" classname="test.Day1" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null"/>
+  </testcase>
+  <testcase name="screenshotOnFail[[TestResult name=validateOnPrice1 status=FAILURE method=Day1.validateOnPrice1(java.lang.String)[pri:0, instance:test.Day1@482bce4f] output={null}]](0)" classname="test.Day1" time="15.034">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at utility.HelperClass.screenshotMethod(HelperClass.java:19)
+	at test.Day1.screenshotOnFail(Day1.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-out><![CDATA[Fail ...taking screenshot
+]]></system-out>
+  </testcase>
+  <testcase name="screenshotOnFail" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFail" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFail" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFail" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFail" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="validateOnPrice1[Notice of Intent to Lien](2)" classname="test.Day1" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null"/>
+  </testcase>
+  <testcase name="validateOnPrice1[Notice of Intent to Lien](2)" classname="test.Day1" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;driver&quot; is null"/>
+  </testcase>
+  <testcase name="validateOnPrice1[Lien Waiver](3)" classname="test.Day1" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null"/>
+  </testcase>
+  <testcase name="validateOnPrice1[Lien Waiver](3)" classname="test.Day1" time="0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;driver&quot; is null"/>
+  </testcase>
+  <testcase name="afterClass" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterClass" classname="test.Day1" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>
