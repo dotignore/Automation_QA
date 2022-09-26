@@ -1662,3 +1662,70 @@ https://gorest.co.in/public/v2/users
 [{"field":"email","message":"has already been taken"}]
 2022-09-24 00:59:13 INFO  REST API TEST:164 - 
 *********  Finished Case **********
+2022-09-26 20:28:40 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-26 20:28:40 INFO  REST API TEST:29 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"JohnH","email":"JohnV@yopmail.com","status":"active"}
+2022-09-26 20:28:46 INFO  REST API TEST:40 - 
+===============  Response TC_001_3 ==================
+{"id":4077,"name":"JohnH","email":"JohnV@yopmail.com","gender":"male","status":"active"}
+2022-09-26 20:28:48 INFO  REST API TEST:52 - 
+==================== TC_001_4 ========================
+
+2022-09-26 20:28:48 INFO  REST API TEST:60 - 
+==================== TC_001_5 ========================
+
+2022-09-26 20:28:48 INFO  REST API TEST:66 - 
+=============== BASE URL =================
+https://gorest.co.in/public/v2/users
+2022-09-26 20:28:48 INFO  REST API TEST:69 - ===============  Request =====================
+{"gender":"male","name":"JohnR","email":"JohnI@yopmail.com","status":"inactive"}
+2022-09-26 20:28:48 INFO  REST API TEST:72 - 
+===============   Response ==================
+{"id":4079,"name":"JohnR","email":"JohnI@yopmail.com","gender":"male","status":"inactive"}
+2022-09-26 20:28:51 INFO  REST API TEST:86 - 
+=============== get request url  =================
+https://gorest.co.in/public/v2/users/31
+2022-09-26 20:28:51 INFO  REST API TEST:88 - 
+=============== get response  =================
+io.restassured.internal.RestAssuredResponseImpl@59429fac
+2022-09-26 20:28:51 INFO  REST API TEST:94 - 
+=============== BASE URL =================
+https://gorest.co.in/public/v2/users
+2022-09-26 20:28:51 INFO  REST API TEST:99 - 
+===============  Request =====================
+{"gender":"male","name":"Deeksha Sharma","email":"deeksha_sharma@adams.org","status":"active"}
+2022-09-26 20:28:52 INFO  REST API TEST:103 - 
+===============   Response ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-26 20:28:54 INFO  REST API TEST:115 - 
+=============== BASE URL =================
+https://gorest.co.in/public/v2/user
+2022-09-26 20:28:54 INFO  REST API TEST:118 - 
+===============  Request =====================
+{"gender":"male","name":"Johny","email":"Johnx@yopmail.com","status":"active"}
+2022-09-26 20:28:55 INFO  REST API TEST:121 - 
+===============   Response ==================
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><link rel="stylesheet" href="/assets/application-3a5c5185e30a588f125037e10e0edf3f1e472c7365e320bc382a279911d628bc.css" media="all" data-turbolinks-track="reload" /><script src="/packs/js/application-3d361c652948a6caa881.js" data-turbolinks-track="reload" defer="defer"></script><script async="true" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4930099895671899"></script><script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-7KR6VNWHWS"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7KR6VNWHWS');</script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go REST</a><button aria-controls="AppNavBar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#AppNavBar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="AppNavBar"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/qa"><i class="fas fa-life-ring"></i> Help</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="ToolsDropDown" role="button"><i class="fas fa-tools"></i> Tools</a><ul aria-labelledby="ToolsDropDown" class="dropdown-menu"><li class=""><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a></li><li class=""><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a></li><li class=""><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></nav><div class="container pt-3"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="card text-white border-secondary bg-dark"><div class="card-header"><h1 class="card-title text-warning"><i class="fas fa-ghost text-white slide-right"></i> HTTP: Not Found </h1></div><div class="card-body"><h3 class="leaad code-text"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>print</em> <i>"We're really sorry about that."</i><br /></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page</em></code></p></div></div></div><hr class="mt-5" /><div class="container"><div class="footer"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2022</li><li class="list-inline-item float-lg-end"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-end me-3"><a href="/contact-us">Contact Us</a></li></ul></div></div></body></html>
+2022-09-26 20:28:57 INFO  REST API TEST:131 - 
+=============== BASE URL =================
+https://gorest.co.in/public/v2/users
+2022-09-26 20:28:57 INFO  REST API TEST:135 - 
+===============  Request =====================
+{"gender":"male","name":"Johng","email":"JohnG@yopmail.com","status":"active"}
+2022-09-26 20:28:57 INFO  REST API TEST:137 - 
+===============   Response ==================
+{"message":"Authentication failed"}
+2022-09-26 20:28:59 INFO  REST API TEST:149 - 
+=============== BASE URL =================
+https://gorest.co.in/public/v2/users
+2022-09-26 20:28:59 INFO  REST API TEST:153 - 
+===============  Request =====================
+{"gender":"male","name":"JohnT","email":"JohnM@yopmail.com","status":"active"}
+2022-09-26 20:29:00 INFO  REST API TEST:155 - 
+===============   Response ==================
+{"id":4085,"name":"JohnT","email":"JohnM@yopmail.com","gender":"male","status":"active"}
+2022-09-26 20:29:00 INFO  REST API TEST:164 - 
+*********  Finished Case **********
