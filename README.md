@@ -11,5 +11,3 @@
 
 ## :black_square_button: [Docker - API Tests] -->  :black_square_button: [Docker - API Server]
 
-
-https://gist.github.com/rxaviers/7360908
