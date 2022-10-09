@@ -13,7 +13,6 @@ public class RegistrationPage extends PageBase{
 		super(driver);	
 	}
 
-
 	// - - - - - - - - - - - - - - - - - - - - - -
 
 	@FindBy(xpath = "//span[@class='close']") WebElement closeUp;

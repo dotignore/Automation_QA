@@ -32,7 +32,8 @@ public class ListCarTest {
                 .body(product)
                 .when()
                 .post(baseUrlProduct)
-                .then()
+                .then().log().body()
+
                 .statusCode(201)
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue())
@@ -50,6 +51,7 @@ public class ListCarTest {
                 .when()
                 .post(baseUrlCar)
                 .then()
+                .log().body()
                 .statusCode(201)
                 .extract().path("_id");
 
@@ -58,6 +60,7 @@ public class ListCarTest {
                 .when()
                 .get(baseUrlCar.concat(carId))
                 .then()
+                .log().body()
                 .statusCode(200)
                 .body("_id", equalTo(carId));
 
@@ -66,6 +69,7 @@ public class ListCarTest {
                 .headers("Authorization", tokenId)
                 .delete(baseUrlCar.concat("concluir-compra"))
                 .then()
+                .log().body()
                 .statusCode(200)
                 .body("message", equalTo("Registro excluído com sucesso"));
     }
@@ -77,6 +81,7 @@ public class ListCarTest {
                 .when()
                 .get(baseUrlCar)
                 .then()
+                .log().body()
                 .statusCode(200);
     }
 
@@ -88,6 +93,7 @@ public class ListCarTest {
                 .when()
                 .get(baseUrlCar)
                 .then()
+                .log().body()
                 .statusCode(400)
                 .body("id", equalTo("id não é permitido"));
     }
@@ -103,6 +109,7 @@ public class ListCarTest {
                 .when()
                 .get(baseUrlCar)
                 .then()
+                .log().body()
                 .statusCode(200)
                 .body("quantidade", equalTo(0));
     }

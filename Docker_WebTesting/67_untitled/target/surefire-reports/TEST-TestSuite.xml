@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="8.343" tests="92" errors="0" skipped="91" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="207.027" tests="50" errors="0" skipped="9" failures="3">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1.1+0"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/ignore/Documents/Selenium/67_untitled"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/ignore/Documents/GitHub/Automation_QA/Docker_WebTesting/67_untitled"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="UA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/ignore/Documents/Selenium/67_untitled"/>
+    <property name="user.dir" value="/Users/ignore/Documents/GitHub/Automation_QA/Docker_WebTesting/67_untitled"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="18.0.1.1+0"/>
     <property name="os.arch" value="x86_64"/>
@@ -61,123 +61,33 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="startDriver" classname="tests.WishlistPageTest" time="1.968">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+  <testcase name="searchForItemUsingAutoSuggession" classname="tests.WishlistPageTest" time="4.242"/>
+  <testcase name="addProductTowishlist" classname="tests.WishlistPageTest" time="4.186"/>
+  <testcase name="removeProductFromWishlist" classname="tests.WishlistPageTest" time="5.796"/>
+  <testcase name="searchForItemAndAddItToCart" classname="tests.GuestCheckoutTest" time="5.911"/>
+  <testcase name="userCanAddToCart" classname="tests.GuestCheckoutTest" time="7.96"/>
+  <testcase name="guestUserCanCheckout" classname="tests.GuestCheckoutTest" time="17.027"/>
+  <testcase name="downloadAndPrintInvoice" classname="tests.GuestCheckoutTest" time="9.601"/>
+  <testcase name="testRegistrationPage" classname="tests.EmailFriendPageTest" time="3.966"/>
+  <testcase name="searchForItem" classname="tests.EmailFriendPageTest" time="8.751"/>
+  <testcase name="emailAFriend" classname="tests.EmailFriendPageTest" time="3.988"/>
+  <testcase name="testClickingLogout" classname="tests.EmailFriendPageTest" time="5.737"/>
+  <testcase name="userCanChangecurrency" classname="tests.ChangeCurrencyTest" time="0.677"/>
+  <testcase name="searchForItemUsingAutoSuggession" classname="tests.ChangeCurrencyTest" time="3.737">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at tests.ChangeCurrencyTest.searchForItemUsingAutoSuggession(ChangeCurrencyTest.java:43)
 </failure>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-]]></system-err>
   </testcase>
-  <testcase name="searchForItemUsingAutoSuggession" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addProductTowishlist" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="removeProductFromWishlist" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItemAndAddItToCart" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanAddToCart" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="guestUserCanCheckout" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="downloadAndPrintInvoice" classname="tests.GuestCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testRegistrationPage" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItem" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="emailAFriend" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogout" classname="tests.EmailFriendPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanChangecurrency" classname="tests.ChangeCurrencyTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItemUsingAutoSuggession" classname="tests.ChangeCurrencyTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanChangecurrencyAgain" classname="tests.ChangeCurrencyTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="tests.SeleniumGridRegistrationTest" time="0">
-    <skipped/>
+  <testcase name="userCanChangecurrencyAgain" classname="tests.ChangeCurrencyTest" time="5.918"/>
+  <testcase name="setUp" classname="tests.SeleniumGridRegistrationTest" time="5.953">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:0:0:0:a4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'IgNOrEs-iMac.local', ip: 'fd94:a79a:9ca5:0:0:0:0:a4a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+</failure>
     <system-out><![CDATA[
 0 Scenarios
 0 Steps
@@ -186,7 +96,7 @@ No features found at [classpath:tests]
 ]]></system-out>
   </testcase>
   <testcase name="testRegistrationPage" classname="tests.SeleniumGridRegistrationTest" time="0">
-    <skipped/>
+    <skipped message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:0:0:0:a4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
   </testcase>
   <testcase name="screenshotOnFailure" classname="tests.SeleniumGridRegistrationTest" time="0">
     <skipped/>
@@ -201,244 +111,45 @@ No features found at [classpath:tests]
     <skipped/>
   </testcase>
   <testcase name="testClickingLogout" classname="tests.SeleniumGridRegistrationTest" time="0">
-    <skipped/>
+    <skipped message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:0:0:0:a4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
   </testcase>
   <testcase name="testClickingLogin" classname="tests.SeleniumGridRegistrationTest" time="0">
-    <skipped/>
+    <skipped message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:0:0:0:a4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
   </testcase>
   <testcase name="testClickingLogoutAgain" classname="tests.SeleniumGridRegistrationTest" time="0">
-    <skipped/>
+    <skipped message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;IgNOrEs-iMac.local&apos;, ip: &apos;fd94:a79a:9ca5:0:0:0:0:a4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
   </testcase>
   <testcase name="stopDriver" classname="tests.SeleniumGridRegistrationTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="testRegistrationPage" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[No features found at [classpath:tests]
-]]></system-out>
+  <testcase name="testRegistrationPage" classname="tests.RegisteredUserCheckoutTest" time="1.564"/>
+  <testcase name="searchForItemAndAddItToCart" classname="tests.RegisteredUserCheckoutTest" time="4.17"/>
+  <testcase name="userCanAddToCart" classname="tests.RegisteredUserCheckoutTest" time="7.938"/>
+  <testcase name="downloadAndPrintInvoice" classname="tests.RegisteredUserCheckoutTest" time="2.007">
+    <failure message="Cannot invoke &quot;pages.CheckoutPage.clickOrderDetailsLink()&quot; because &quot;this.checkout&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "pages.CheckoutPage.clickOrderDetailsLink()" because "this.checkout" is null
+	at tests.RegisteredUserCheckoutTest.downloadAndPrintInvoice(RegisteredUserCheckoutTest.java:92)
+</failure>
   </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItemAndAddItToCart" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanAddToCart" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="downloadAndPrintInvoice" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogout" classname="tests.RegisteredUserCheckoutTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanHoverMenu" classname="tests.HoverMenuTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.HoverMenuTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="fillContactUsForm" classname="tests.ContactUsPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.ContactUsPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testRegistrationPage" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogout" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogin" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogoutAgain" classname="tests.RegistrationPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItemsAndAddThemToCompareList" classname="tests.AddToCompareListTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCompareListTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCompareListTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="clearCompareListItems" classname="tests.AddToCompareListTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItemAndAddItToCart" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanAddToCart" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanChangeQuantity" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="userCanClearCart" classname="tests.AddToCartPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testRegistrationPage" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItem" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addProductReview" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogout" classname="tests.AddReviewPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="searchForItemUsingAutoSuggession" classname="tests.SearchPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.SearchPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testRegistrationPage" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-No features found at [classpath:tests]
-]]></system-out>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="takeScreenshotOnFailure" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testChangePassword" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogout" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testClickingLogin" classname="tests.MyAccountPageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="stopDriver" classname="tests.WishlistPageTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[
-0 Scenarios
-0 Steps
-0m0.000s
-
-]]></system-out>
-  </testcase>
+  <testcase name="testClickingLogout" classname="tests.RegisteredUserCheckoutTest" time="5.711"/>
+  <testcase name="userCanHoverMenu" classname="tests.HoverMenuTest" time="1.224"/>
+  <testcase name="fillContactUsForm" classname="tests.ContactUsPageTest" time="2.483"/>
+  <testcase name="testRegistrationPage" classname="tests.RegistrationPageTest" time="3.651"/>
+  <testcase name="testClickingLogout" classname="tests.RegistrationPageTest" time="5.724"/>
+  <testcase name="testClickingLogin" classname="tests.RegistrationPageTest" time="1.288"/>
+  <testcase name="testClickingLogoutAgain" classname="tests.RegistrationPageTest" time="0.646"/>
+  <testcase name="searchForItemsAndAddThemToCompareList" classname="tests.AddToCompareListTest" time="14.756"/>
+  <testcase name="clearCompareListItems" classname="tests.AddToCompareListTest" time="5.665"/>
+  <testcase name="searchForItemAndAddItToCart" classname="tests.AddToCartPageTest" time="3.696"/>
+  <testcase name="userCanAddToCart" classname="tests.AddToCartPageTest" time="2.846"/>
+  <testcase name="userCanChangeQuantity" classname="tests.AddToCartPageTest" time="5.578"/>
+  <testcase name="userCanClearCart" classname="tests.AddToCartPageTest" time="1.79"/>
+  <testcase name="testRegistrationPage" classname="tests.AddReviewPageTest" time="1.483"/>
+  <testcase name="searchForItem" classname="tests.AddReviewPageTest" time="3.729"/>
+  <testcase name="addProductReview" classname="tests.AddReviewPageTest" time="6.162"/>
+  <testcase name="testClickingLogout" classname="tests.AddReviewPageTest" time="0.677"/>
+  <testcase name="searchForItemUsingAutoSuggession" classname="tests.SearchPageTest" time="3.792"/>
+  <testcase name="testRegistrationPage" classname="tests.MyAccountPageTest" time="6.473"/>
+  <testcase name="testChangePassword" classname="tests.MyAccountPageTest" time="5.239"/>
+  <testcase name="testClickingLogout" classname="tests.MyAccountPageTest" time="7.76"/>
+  <testcase name="testClickingLogin" classname="tests.MyAccountPageTest" time="1.93"/>
 </testsuite>

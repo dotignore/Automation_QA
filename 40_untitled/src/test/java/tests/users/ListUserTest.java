@@ -1,7 +1,10 @@
 package tests.users;
 
 import io.restassured.http.ContentType;
-import org.junit.Test;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+//import org.junit.Test;
 import utils.UserUtil;
 
 import static io.restassured.RestAssured.authentication;
@@ -14,6 +17,7 @@ public class ListUserTest {
 
     public String id;
 
+    //@Test(description = "TC_006: Description test Description test", priority=6)
     @Test
     public void testListUsersAllParams()
     {
@@ -28,12 +32,15 @@ public class ListUserTest {
                 .when()
                 .get(baseUrlUser)
                 .then()
+                .log().body()
                 .statusCode(200)
                 .body("usuarios.password[0]", equalTo("teste"))
                 .body("usuarios.administrador[0]", equalTo("true"))
                 .body("usuarios._id[0]", equalTo(id));
 
         System.out.println("baseUrlUser = "+ baseUrlUser);
+
+        System.out.println("\n===============  1Request1 =====================\n");
     }
 
     @Test

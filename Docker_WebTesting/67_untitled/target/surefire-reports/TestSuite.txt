@@ -1,7 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 92, Failures: 1, Errors: 0, Skipped: 91, Time elapsed: 8.343 sec <<< FAILURE! - in TestSuite
-startDriver(tests.WishlistPageTest)  Time elapsed: 1.968 sec  <<< FAILURE!
-java.lang.NullPointerException
+Tests run: 50, Failures: 3, Errors: 0, Skipped: 9, Time elapsed: 207.027 sec <<< FAILURE! - in TestSuite
+searchForItemUsingAutoSuggession(tests.ChangeCurrencyTest)  Time elapsed: 3.737 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.ChangeCurrencyTest.searchForItemUsingAutoSuggession(ChangeCurrencyTest.java:43)
+
+setUp(tests.SeleniumGridRegistrationTest)  Time elapsed: 5.953 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'IgNOrEs-iMac.local', ip: 'fd94:a79a:9ca5:0:0:0:0:a4a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+
+downloadAndPrintInvoice(tests.RegisteredUserCheckoutTest)  Time elapsed: 2.007 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "pages.CheckoutPage.clickOrderDetailsLink()" because "this.checkout" is null
+	at tests.RegisteredUserCheckoutTest.downloadAndPrintInvoice(RegisteredUserCheckoutTest.java:92)
 

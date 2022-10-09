@@ -50,6 +50,7 @@ public class CancelCarTest {
                 .when()
                 .post(baseUrlCar)
                 .then()
+                .log().body()
                 .statusCode(201)
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
@@ -69,9 +70,10 @@ public class CancelCarTest {
                 .contentType(ContentType.JSON)
                 .headers("Authorization", tokenId)
                 .delete(baseUrlCar.concat("cancelar-compra"))
-                .then()
+                .then().log().body()
                 .statusCode(200)
                 .body("message", equalTo("Não foi encontrado carrinho para esse usuário"));
+
     }
 
     @Test

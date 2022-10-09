@@ -21,15 +21,16 @@ public class SpotifyAPITest extends BaseAPI {
 	
 	@BeforeClass
 	public static void authenticationSpotify() {
-		Response responseLogin = 
+		Response responseLogin =
 				given()
 					.header("Authorization", "Basic " + EncodeLoginToken.getAuthToken(clientId, clientSecret))
 					.formParam("grant_type", "client_credentials")
 					.contentType("application/x-www-form-urlencoded")
-					.when()
-						.post("https://accounts.spotify.com/api/token");
-
+					//.when().log().all()
+					.post("https://accounts.spotify.com/api/token");
 		accessToken = responseLogin.jsonPath().get("access_token");
+		// System.out.println("accessToken = " + accessToken);
+		// System.out.println("accessToken = BQB2hvBaiiK7cmp1GZ7ZYduveSw5Zvllw4PWp_RQAtH2TMyveu6T9V0BKyAm5IFGoIAi3gdwivVnE2SeLLQijRIldE8tA7p1-HroTRU59AARU8OBsVw");
 
 		/*
 		 * Using EncodeLoginToken to convert clientId and clientSercret to base64
@@ -55,9 +56,9 @@ public class SpotifyAPITest extends BaseAPI {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/browse/new-releases")
+			.get("/browse/new-releases")
 			.then()
-				.statusCode(200);
+			.statusCode(200);
 	}
 	
 	@Test
@@ -65,32 +66,46 @@ public class SpotifyAPITest extends BaseAPI {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/artists/" + idArtist)
-			.then().log().body()
-				.statusCode(200)
-				.body("name", equalTo("Harry Styles"));
+			.get("/artists/" + idArtist)
+			.then()
+
+			.log().body()
+
+			.statusCode(200)
+			.body("name", equalTo("Harry Styles"));
 	}
-	
+
 	@Test
 	public void getArtistWithoutId() {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/artists/")
-			.then().log().body()
-				.statusCode(400)
-				.body("error.message", equalTo("invalid id"));
+			.get("/artists/")
+			.then()
+			.log()
+			.body()
+			.statusCode(400)
+			.body("error.message", equalTo("invalid id"));
 	}
+//	{
+//		"error":
+//		{
+//		"status": 400,
+//				"message": "invalid id"
+//		}
+//	}
 	
 	@Test
 	public void getSearchArtist() {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/search?q=Taylor Swift&type=artist")
+			.get("/search?q=Taylor Swift&type=artist")
 			.then()
-				.statusCode(200)
-				.body("artists.items[0].name", equalTo("Taylor Swift"));
+			.log()
+			.body()
+			.statusCode(200)
+			.body("artists.items[0].name", equalTo("Taylor Swift"));
 	}
 	
 	@Test
@@ -98,22 +113,23 @@ public class SpotifyAPITest extends BaseAPI {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/search?q=Taylor Swift")
+			.get("/search?q=Taylor Swift")
 			.then()
-				.statusCode(400)
-				.body("error.message", equalTo("Missing parameter type"));
+			.statusCode(400)
+			.body("error.message", equalTo("Missing parameter type"));
 	}
 	
 	
 	@Test
-	public void getPlaylist() {
+	public void getPlaylist()
+	{
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/playlists/" + idPlaylist)
+			.get("/playlists/" + idPlaylist)
 			.then()
-				.statusCode(200)
-				.body("description", equalTo("A playlist for testing pourposes"));
+			.statusCode(200)
+			.body("description", equalTo("A playlist for testing pourposes"));
 	}
 	
 	@Test
@@ -121,22 +137,30 @@ public class SpotifyAPITest extends BaseAPI {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/playlists/7mzrIsaAjnXihW3InKjlC3")
+			.get("/playlists/7mzrIsaAjnXihW3InKjlC3")
 			.then().log().body()
-				.statusCode(404)
-				.body("error.message", equalTo("Not found."));
+			.statusCode(404)
+			.body("error.message", equalTo("Not found."));
 	}
-	
+//	{
+//		"error":
+//		{
+//		"status": 404,
+//				"message": "Not found."
+//		}
+//	}
+
 	@Test
 	public void getAlbum() {
+		System.out.println("https://api.spotify.com/v1/albums/7mzrIsaAjnXihW3InKjlC3");
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/albums/" + idAlbum)
-			.then()
-				.statusCode(200)
-				.body("artists[0].name", equalTo("Taylor Swift"))
-				.body("album_type", equalTo("album"));
+			.get("/albums/" + idAlbum)
+			.then().log().body()
+			.statusCode(200)
+			.body("artists[0].name", equalTo("Taylor Swift"))
+			.body("album_type", equalTo("album"));
 	}
 	
 	@Test
@@ -144,10 +168,16 @@ public class SpotifyAPITest extends BaseAPI {
 		given()
 			.header("Authorization", "Bearer " + accessToken)
 			.when()
-				.get("/albums/6KImCVD70vtIoJWnq6nGn3")
-			.then()
-				.statusCode(404)
-				.body("error.message", equalTo("non existing id"));
+			.get("/albums/6KImCVD70vtIoJWnq6nGn3")
+			.then().log().body()
+			.statusCode(404)
+			.body("error.message", equalTo("non existing id"));
 	}
+//	{
+//		"error": {
+//		"status": 404,
+//				"message": "non existing id"
+//	}
+//	}
 
 }

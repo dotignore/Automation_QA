@@ -17,10 +17,8 @@ public class BaseTest {
     @BeforeClass
     public void setup()
     {
-
         logger=Logger.getLogger("REST API TEST");//added Logger
         PropertyConfigurator.configure("log4j.properties"); //added logger
         logger.setLevel(Level.DEBUG);
-
     }
 }

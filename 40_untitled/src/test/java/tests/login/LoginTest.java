@@ -24,6 +24,9 @@ public class LoginTest {
                 .when()
                 .post(baseUrlLogin)
                 .then()
+
+                .log().body()
+
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("schema/login-schema.json"));
     }
@@ -38,6 +41,9 @@ public class LoginTest {
                 .when()
                 .post(baseUrlLogin)
                 .then()
+
+                .log().body()
+
                 .statusCode(200)
                 .body("authorization", notNullValue())
                 .body("message", equalTo("Login realizado com sucesso"));
@@ -52,6 +58,9 @@ public class LoginTest {
                 .when()
                 .post(baseUrlLogin)
                 .then()
+
+                .log().body()
+
                 .statusCode(400)
                 .body("email", equalTo("email deve ser uma string"));
     }

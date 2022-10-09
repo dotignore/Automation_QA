@@ -3,17 +3,16 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.AddToCompareListTest">
+      <class name="tests.RegisteredUserCheckoutTest">
         <methods>
+          <include name="downloadAndPrintInvoice"/>
           <include name="startDriver"/>
           <include name="setUpClass"/>
-          <include name="clearCompareListItems"/>
           <include name="stopDriver"/>
-          <include name="searchForItemsAndAddThemToCompareList"/>
           <include name="tearDownClass"/>
           <include name="takeScreenshotOnFailure"/>
         </methods>
-      </class> <!-- tests.AddToCompareListTest -->
+      </class> <!-- tests.RegisteredUserCheckoutTest -->
       <class name="tests.SeleniumGridRegistrationTest">
         <methods>
           <include name="testRegistrationPage"/>
@@ -27,9 +26,7 @@
       </class> <!-- tests.SeleniumGridRegistrationTest -->
       <class name="tests.ChangeCurrencyTest">
         <methods>
-          <include name="userCanChangecurrency"/>
           <include name="startDriver"/>
-          <include name="userCanChangecurrencyAgain"/>
           <include name="setUpClass"/>
           <include name="stopDriver"/>
           <include name="searchForItemUsingAutoSuggession"/>
@@ -37,140 +34,6 @@
           <include name="takeScreenshotOnFailure"/>
         </methods>
       </class> <!-- tests.ChangeCurrencyTest -->
-      <class name="tests.MyAccountPageTest">
-        <methods>
-          <include name="testChangePassword"/>
-          <include name="testClickingLogin"/>
-          <include name="startDriver"/>
-          <include name="testRegistrationPage"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="testClickingLogout"/>
-        </methods>
-      </class> <!-- tests.MyAccountPageTest -->
-      <class name="tests.SearchPageTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="searchForItemUsingAutoSuggession"/>
-        </methods>
-      </class> <!-- tests.SearchPageTest -->
-      <class name="tests.EmailFriendPageTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="searchForItem"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="testClickingLogout"/>
-          <include name="tearDownClass"/>
-          <include name="emailAFriend"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="testRegistrationPage"/>
-        </methods>
-      </class> <!-- tests.EmailFriendPageTest -->
-      <class name="tests.GuestCheckoutTest">
-        <methods>
-          <include name="searchForItemAndAddItToCart"/>
-          <include name="startDriver"/>
-          <include name="guestUserCanCheckout"/>
-          <include name="downloadAndPrintInvoice"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="userCanAddToCart"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.GuestCheckoutTest -->
-      <class name="tests.WishlistPageTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="removeProductFromWishlist"/>
-          <include name="tearDownClass"/>
-          <include name="searchForItemUsingAutoSuggession"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="addProductTowishlist"/>
-        </methods>
-      </class> <!-- tests.WishlistPageTest -->
-      <class name="tests.HoverMenuTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="userCanHoverMenu"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.HoverMenuTest -->
-      <class name="tests.AddReviewPageTest">
-        <methods>
-          <include name="testRegistrationPage"/>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="tearDownClass"/>
-          <include name="searchForItem"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="addProductReview"/>
-          <include name="testClickingLogout"/>
-        </methods>
-      </class> <!-- tests.AddReviewPageTest -->
-      <class name="tests.ContactUsPageTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="fillContactUsForm"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.ContactUsPageTest -->
-      <class name="tests.RegistrationPageTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="testRegistrationPage"/>
-          <include name="stopDriver"/>
-          <include name="testClickingLogin"/>
-          <include name="testClickingLogout"/>
-          <include name="testClickingLogoutAgain"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.RegistrationPageTest -->
-      <class name="tests.RegisteredUserCheckoutTest">
-        <methods>
-          <include name="downloadAndPrintInvoice"/>
-          <include name="searchForItemAndAddItToCart"/>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="testRegistrationPage"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="testClickingLogout"/>
-          <include name="userCanAddToCart"/>
-        </methods>
-      </class> <!-- tests.RegisteredUserCheckoutTest -->
-      <class name="tests.AddToCartPageTest">
-        <methods>
-          <include name="startDriver"/>
-          <include name="userCanClearCart"/>
-          <include name="setUpClass"/>
-          <include name="userCanAddToCart"/>
-          <include name="stopDriver"/>
-          <include name="userCanChangeQuantity"/>
-          <include name="tearDownClass"/>
-          <include name="takeScreenshotOnFailure"/>
-          <include name="searchForItemAndAddItToCart"/>
-        </methods>
-      </class> <!-- tests.AddToCartPageTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

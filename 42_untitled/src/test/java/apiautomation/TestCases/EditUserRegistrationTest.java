@@ -35,7 +35,7 @@ public class EditUserRegistrationTest extends BaseTest {
 
         logger.info("\n" +
                 "===============  Response TC_001_3 ==================\n"
-                + response.body().asString());  //
+                + response.body().asString());                                                  //
         Thread.sleep(2000);
 
         logger.info("\n" +

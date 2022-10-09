@@ -1,4 +1,4 @@
-package tests;
+vpackage tests;
 
 
 import static org.testng.Assert.assertEquals;

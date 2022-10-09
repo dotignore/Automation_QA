@@ -2140,3 +2140,217 @@ https://gorest.co.in/public/v2/users
 
 2022-09-28 20:40:11 INFO  REST API TEST:57 - 
 *********  Finished Case **********
+2022-09-28 21:09:00 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 21:09:00 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnu","email":"JohnD@yopmail.com","status":"active"}
+2022-09-28 21:09:03 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 21:09:05 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 21:09:06 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 21:09:11 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 21:09:11 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"JohnG","email":"JohnF@yopmail.com","status":"active"}
+2022-09-28 21:09:14 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 21:09:16 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 21:09:16 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 21:10:00 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 21:10:00 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnh","email":"JohnG@yopmail.com","status":"active"}
+2022-09-28 21:10:03 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+{"id":3989,"name":"Johnh","email":"JohnG@yopmail.com","gender":"male","status":"active"}
+2022-09-28 21:10:05 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 21:10:05 INFO  REST API TEST:50 - 
+==================== TC_001_5 ========================
+
+2022-09-28 21:10:05 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 21:10:29 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 21:10:29 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnv","email":"Johnv@yopmail.com","status":"active"}
+2022-09-28 21:10:32 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 21:10:34 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 21:10:34 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 21:12:42 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 21:12:42 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"JohnP","email":"JohnR@yopmail.com","status":"active"}
+2022-09-28 21:12:45 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+{"id":3997,"name":"JohnP","email":"JohnR@yopmail.com","gender":"male","status":"active"}
+2022-09-28 21:12:47 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 21:12:47 INFO  REST API TEST:50 - 
+==================== TC_001_5 ========================
+
+2022-09-28 21:12:47 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 22:50:25 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 22:50:25 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johns","email":"JohnY@yopmail.com","status":"active"}
+2022-09-28 22:50:28 INFO  REST API TEST:38 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 22:50:30 INFO  REST API TEST:43 - 
+==================== TC_001_4 ========================
+
+2022-09-28 22:50:30 INFO  REST API TEST:59 - 
+*********  Finished Case **********
+2022-09-28 23:07:56 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:07:56 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"JohnV","email":"JohnJ@yopmail.com","status":"active"}
+2022-09-28 23:07:59 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+{"id":4118,"name":"JohnV","email":"JohnJ@yopmail.com","gender":"male","status":"active"}
+2022-09-28 23:08:01 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:08:01 INFO  REST API TEST:50 - 
+==================== TC_001_5 ========================
+
+2022-09-28 23:08:01 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:08:21 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:08:21 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnh","email":"JohnA@yopmail.com","status":"active"}
+2022-09-28 23:08:25 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 23:08:27 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:08:27 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:10:49 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:10:49 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"JohnW","email":"JohnB@yopmail.com","status":"active"}
+2022-09-28 23:10:53 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+{"id":4121,"name":"JohnW","email":"JohnB@yopmail.com","gender":"male","status":"active"}
+2022-09-28 23:10:55 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:10:55 INFO  REST API TEST:50 - 
+==================== TC_001_5 ========================
+
+2022-09-28 23:10:55 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:31:22 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:31:22 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"JohnD","email":"JohnD@yopmail.com","status":"active"}
+2022-09-28 23:31:25 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 23:31:27 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:31:27 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:31:42 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:31:42 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnu","email":"JohnL@yopmail.com","status":"active"}
+2022-09-28 23:31:45 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 23:31:47 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:31:47 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:31:54 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:31:54 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnf","email":"Johnu@yopmail.com","status":"active"}
+2022-09-28 23:31:57 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+{"id":4138,"name":"Johnf","email":"Johnu@yopmail.com","gender":"male","status":"active"}
+2022-09-28 23:31:59 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:31:59 INFO  REST API TEST:50 - 
+==================== TC_001_5 ========================
+
+2022-09-28 23:31:59 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:32:06 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:32:06 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnl","email":"Johno@yopmail.com","status":"active"}
+2022-09-28 23:32:09 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+[{"field":"email","message":"has already been taken"}]
+2022-09-28 23:32:11 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:32:11 INFO  REST API TEST:57 - 
+*********  Finished Case **********
+2022-09-28 23:32:34 INFO  REST API TEST:24 - 
+=============== BASE URL TC_001_1 =================
+https://gorest.co.in/public/v2/users
+2022-09-28 23:32:34 INFO  REST API TEST:31 - 
+===============  Request TC_001_2 =====================
+{"gender":"male","name":"Johnp","email":"Johnc@yopmail.com","status":"active"}
+2022-09-28 23:32:38 INFO  REST API TEST:36 - 
+===============  Response TC_001_3 ==================
+{"id":4139,"name":"Johnp","email":"Johnc@yopmail.com","gender":"male","status":"active"}
+2022-09-28 23:32:40 INFO  REST API TEST:41 - 
+==================== TC_001_4 ========================
+
+2022-09-28 23:32:40 INFO  REST API TEST:50 - 
+==================== TC_001_5 ========================
+
+2022-09-28 23:32:40 INFO  REST API TEST:57 - 
+*********  Finished Case **********
