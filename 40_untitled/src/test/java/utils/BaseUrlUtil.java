@@ -5,4 +5,7 @@ public class BaseUrlUtil {
     public static String baseUrlUser = "https://serverest.dev/usuarios/";
     public static String baseUrlProduct = "https://serverest.dev/produtos/";
     public static String baseUrlCar = "https://serverest.dev/carrinhos/";
+
+    public static String baseMyUrlUsers = "http://localhost:3000/usuarios/";
+
 }

@@ -5,7 +5,8 @@ import factories.ProductDataFactory;
 import factories.UserDataFactory;
 import io.restassured.http.ContentType;
 import org.junit.Before;
-import org.junit.Test;
+//import org.junit.Test;
+import org.testng.annotations.Test;
 import pojo.CarPojo;
 import pojo.CreateUsersPojo;
 import pojo.ProductCarPojo;
@@ -54,6 +55,8 @@ public class DeleteUserTest {
                 .then()
                 .statusCode(201)
                 .extract().path("_id");
+
+        System.out.println("Print ID = " + ID);
 
         given()
                 .contentType(ContentType.JSON)

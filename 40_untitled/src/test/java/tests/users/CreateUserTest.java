@@ -2,7 +2,8 @@ package tests.users;
 
 import factories.UserDataFactory;
 import io.restassured.http.ContentType;
-import org.junit.Test;
+
+import org.testng.annotations.Test;
 import pojo.CreateUsersPojo;
 import utils.UserUtil;
 
