@@ -28,7 +28,11 @@ public class UpdateUserTest {
                 .body(user)
                 .when()
                 .put(baseUrlUser.concat(id))
+
                 .then()
+                .log().body()
+                // checks
+
                 .statusCode(200)
                 .body("message", equalTo("Registro alterado com sucesso"));
     }
@@ -42,7 +46,11 @@ public class UpdateUserTest {
                 .body(user)
                 .when()
                 .put(baseUrlUser.concat(id))
+
                 .then()
+                .log().body()
+                // checks
+
                 .statusCode(200)
                 .body("message", equalTo("Registro alterado com sucesso"));
     }
@@ -56,7 +64,11 @@ public class UpdateUserTest {
                 .body(user)
                 .when()
                 .put(baseUrlUser.concat("id"))
+
                 .then()
+                .log().body()
+                // checks
+
                 .statusCode(201)
                 .body("_id", notNullValue())
                 .body("message", equalTo("Cadastro realizado com sucesso"));

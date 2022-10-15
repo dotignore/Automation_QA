@@ -45,7 +45,11 @@ public class UserUtil {
                 .body(user)
                 .when()
                 .post(baseUrlUser)
+
                 .then()
+                .log().body()
+                // checks
+
                 .extract().path("_id");
         return id;
     }
