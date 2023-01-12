@@ -1,3 +1,8 @@
+#
+# RUN background DOCKER
+#
+# # open --background -a Docker
+# 
 ##############################################################
 # docker pull suranagivinod/openjdk8
 # SH RUNER

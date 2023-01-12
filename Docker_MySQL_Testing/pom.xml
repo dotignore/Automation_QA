@@ -13,7 +13,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.21.0</version>
+            <version>2.12.4</version>
             <configuration>
                 <!-- Suite testng xml file to consider for test execution -->
                 <suiteXmlFiles>
@@ -27,7 +27,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <!-- To compile your code from the Command Line -->
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.10.1</version>
+            <version>3.8.1</version>
             <configuration>
                 <source>1.8</source>
                 <target>1.8</target>
@@ -39,7 +39,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <plugin>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-maven</artifactId>
-            <version>2.10.0</version>
+            <version>2.9</version>
             <configuration>
                 <reportVersion>2.14.0</reportVersion>
             </configuration>
@@ -50,7 +50,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-resources-plugin</artifactId>
-            <version>3.2.0</version>
+            <version>2.6</version>
             <executions>
                 <execution>
                     <id>copy-allure-environment</id>
@@ -85,17 +85,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
     <dependencies>
 
-        <!-- Allure Java Properties Dependancy -->
-        <dependency>
-            <groupId>ru.qatools.commons</groupId>
-            <artifactId>properties</artifactId>
-            <version>2.0.RC6</version>
-        </dependency>
-        <!-- Allure Attachment Adapter -->
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-attachments</artifactId>
-            <version>${allure.version}</version>
         </dependency>
         <!-- Allure TestNG Adapter -->
         <dependency>
@@ -114,7 +106,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.2</version>
+            <version>7.1.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
